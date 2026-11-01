@@ -18,22 +18,11 @@
     { id: 'americana',     label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
     { id: 'colorful',      label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
     { id: 'demotiles',     label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
-    (() => {
-  'use strict';
-
+    
   // ==========================================================
   // Basemaps — free, no API key
   // ==========================================================
-  const BASEMAPS = [
-    { id: 'ofm-dark',      label: 'Dark — OpenFreeMap',        url: 'https://tiles.openfreemap.org/styles/dark',      group: 'OpenFreeMap' },
-    { id: 'ofm-positron',  label: 'Positron — OpenFreeMap',    url: 'https://tiles.openfreemap.org/styles/positron',  group: 'OpenFreeMap' },
-    { id: 'ofm-liberty',   label: 'Liberty — OpenFreeMap',     url: 'https://tiles.openfreemap.org/styles/liberty',   group: 'OpenFreeMap' },
-    { id: 'ofm-bright',    label: 'Bright — OpenFreeMap',      url: 'https://tiles.openfreemap.org/styles/bright',    group: 'OpenFreeMap' },
-    { id: 'ofm-fiord',     label: 'Fiord — OpenFreeMap',       url: 'https://tiles.openfreemap.org/styles/fiord',     group: 'OpenFreeMap' },
-    { id: 'americana',     label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
-    { id: 'colorful',      label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
-    { id: 'demotiles',     label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
-
+  
     // ── satellite (paste these three) ───────────────────────
     {
       id: 'eox-s2',
@@ -378,8 +367,16 @@
     const previous = state.basemap;
     state.basemap = id;
 
-    // Preserve camera and camera mode; only the style is replaced.
-    map.setStyle(bm.url, { diff: false });
+    // A basemap entry is either a remote style URL (`url`)
+    // or an inline style object (`style`, e.g. raster satellite).
+    const styleArg = bm.url || bm.style;
+    if (!styleArg) {
+      console.warn(`Basemap "${id}" has neither url nor style.`);
+      state.basemap = previous;
+      return;
+    }
+
+    map.setStyle(styleArg, { diff: false });
 
     let settled = false;
     const onStyleLoad = () => {
@@ -399,7 +396,8 @@
       document.getElementById('basemap-select').value = previous;
       const fallback = BASEMAPS.find((b) => b.id === previous);
       if (fallback) {
-        map.setStyle(fallback.url, { diff: false });
+        const fbStyle = fallback.url || fallback.style;
+        map.setStyle(fbStyle, { diff: false });
         map.once('style.load', restoreAfterStyleChange);
       }
     }, 12000);
@@ -413,6 +411,16 @@
       console.warn('Could not restore projection.', err);
     }
     if (state.data) addDataLayers(state.data);
+    const isRaster = !map.getStyle().glyphs;
+const labelsCb = document.getElementById('labels-toggle');
+labelsCb.disabled = isRaster;
+if (isRaster && labelsCb.checked) {
+  labelsCb.checked = false;
+  state.labelsOn = false;
+  if (map.getLayer('locations-label')) {
+    map.setLayoutProperty('locations-label', 'visibility', 'none');
+  }
+}
   }
 
   // ----------------------------------------------------------

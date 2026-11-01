@@ -1,11 +1,29 @@
 (() => {
   'use strict';
 
-  // ----- config -----
-  const BASEMAP_URL = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+  // ==========================================================
+  // Basemaps — free, no API key
+  // From https://makewithmaplibre.com/basemaps/ (Free to use)
+  // Only entries that expose a ready-made style.json are listed;
+  // the page's elevation tiles (Terrarium, Mapterhorn), MIERUNE
+  // raster tiles, and Seamap/Seascape raster services are not
+  // drop-in styles and are therefore omitted.
+  // ==========================================================
+  const BASEMAPS = [
+    { id: 'ofm-dark',      label: 'Dark — OpenFreeMap',        url: 'https://tiles.openfreemap.org/styles/dark',      group: 'OpenFreeMap' },
+    { id: 'ofm-positron',  label: 'Positron — OpenFreeMap',    url: 'https://tiles.openfreemap.org/styles/positron',  group: 'OpenFreeMap' },
+    { id: 'ofm-liberty',   label: 'Liberty — OpenFreeMap',     url: 'https://tiles.openfreemap.org/styles/liberty',   group: 'OpenFreeMap' },
+    { id: 'ofm-bright',    label: 'Bright — OpenFreeMap',      url: 'https://tiles.openfreemap.org/styles/bright',    group: 'OpenFreeMap' },
+    { id: 'ofm-fiord',     label: 'Fiord — OpenFreeMap',       url: 'https://tiles.openfreemap.org/styles/fiord',     group: 'OpenFreeMap' },
+    { id: 'americana',     label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
+    { id: 'colorful',      label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
+    { id: 'demotiles',     label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
+  ];
+
+  const DEFAULT_BASEMAP = 'ofm-dark';
   const DATA_URL = 'data/zodiac_locations_enriched.geojson';
   const DEFAULT_VIEW = { center: [-121.7, 38.2], zoom: 6.2 };
-  const JITTER_RADIUS = 0.0012; // degrees, for co-located markers
+  const JITTER_RADIUS = 0.0012;
 
   const CATEGORIES = {
     crime_scene:  { label: 'Crime scene',            color: '#ef4444' },
@@ -36,13 +54,18 @@
   const state = {
     visible: new Set(Object.keys(CATEGORIES)),
     labelsOn: false,
+    globe: false,
+    basemap: DEFAULT_BASEMAP,
     data: null,
+    selectedId: null,
     ready: false,
   };
 
   let map;
 
-  // ----- utilities -----
+  // ----------------------------------------------------------
+  // helpers
+  // ----------------------------------------------------------
   const escapeHtml = (v) =>
     String(v)
       .replace(/&/g, '&amp;')
@@ -54,7 +77,9 @@
   const humanize = (k) =>
     k.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 
-  // ----- data -----
+  // ----------------------------------------------------------
+  // data
+  // ----------------------------------------------------------
   async function loadData() {
     const res = await fetch(DATA_URL, { cache: 'no-cache' });
     if (!res.ok) {
@@ -95,11 +120,15 @@
     }
   }
 
-  // ----- map -----
+  // ----------------------------------------------------------
+  // map
+  // ----------------------------------------------------------
   function createMap() {
+    const bm = BASEMAPS.find((b) => b.id === state.basemap) || BASEMAPS[0];
+
     map = new maplibregl.Map({
       container: 'map',
-      style: BASEMAP_URL,
+      style: bm.url,
       center: DEFAULT_VIEW.center,
       zoom: DEFAULT_VIEW.zoom,
       minZoom: 1,
@@ -107,30 +136,51 @@
       attributionControl: false,
     });
 
+    // Zoom + compass, bottom-left
     map.addControl(
       new maplibregl.NavigationControl({ visualizePitch: true }),
-      'bottom-right'
+      'bottom-left'
     );
+
+    // Attribution, also bottom-left, sitting under the zoom buttons.
+    // Compact pill; expands on click.
     map.addControl(
       new maplibregl.AttributionControl({
         compact: true,
         customAttribution:
-          '© OpenStreetMap · © CARTO · Data: R. Graysmith, <i>Zodiac</i> (1986)',
+          '© OpenStreetMap contributors · Basemaps: OpenFreeMap, OSM Americana, VersaTiles, MapLibre · Data: R. Graysmith, <i>Zodiac</i> (1986)',
       }),
-      'bottom-right'
+      'bottom-left'
     );
 
-    // Close the panel when clicking bare map
+    // One map-level click handler. Using queryRenderedFeatures instead of
+    // layer-scoped listeners means switching styles cannot stack duplicates.
     map.on('click', (event) => {
       if (!map.getLayer('locations-circle')) return;
       const hits = map.queryRenderedFeatures(event.point, {
         layers: ['locations-circle'],
       });
-      if (hits.length === 0) closeDetails();
+      if (hits.length) openDetails(hits[0]);
+      else closeDetails();
+    });
+
+    map.on('mousemove', (event) => {
+      if (!map.getLayer('locations-circle')) return;
+      const hits = map.queryRenderedFeatures(event.point, {
+        layers: ['locations-circle'],
+      });
+      map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
     });
   }
 
   function addDataLayers(gj) {
+    // After setStyle everything custom is gone; guard anyway.
+    if (map.getSource('locations')) {
+      ['locations-halo', 'locations-circle', 'locations-selected', 'locations-label']
+        .forEach((id) => { if (map.getLayer(id)) map.removeLayer(id); });
+      map.removeSource('locations');
+    }
+
     map.addSource('locations', { type: 'geojson', data: gj });
 
     map.addLayer({
@@ -172,7 +222,7 @@
       id: 'locations-selected',
       type: 'circle',
       source: 'locations',
-      filter: ['==', ['get', 'feature_id'], -1],
+      filter: ['==', ['get', 'feature_id'], state.selectedId ?? -1],
       paint: {
         'circle-radius': 12,
         'circle-color': 'transparent',
@@ -181,37 +231,32 @@
       },
     });
 
-    map.addLayer({
-      id: 'locations-label',
-      type: 'symbol',
-      source: 'locations',
-      layout: {
-        'text-field': ['get', 'name'],
-        'text-size': 11,
-        'text-offset': [0, 1.2],
-        'text-anchor': 'top',
-        'text-max-width': 12,
-        visibility: 'none',
-      },
-      paint: {
-        'text-color': '#f8fafc',
-        'text-halo-color': 'rgba(0,0,0,0.85)',
-        'text-halo-width': 1.4,
-      },
-    });
+    // Labels are optional and need glyphs from the style; a style without
+    // glyphs would throw here, so isolate the failure.
+    try {
+      map.addLayer({
+        id: 'locations-label',
+        type: 'symbol',
+        source: 'locations',
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 11,
+          'text-offset': [0, 1.2],
+          'text-anchor': 'top',
+          'text-max-width': 12,
+          visibility: state.labelsOn ? 'visible' : 'none',
+        },
+        paint: {
+          'text-color': '#f8fafc',
+          'text-halo-color': 'rgba(0,0,0,0.85)',
+          'text-halo-width': 1.4,
+        },
+      });
+    } catch (err) {
+      console.warn('Label layer skipped for this basemap (no glyphs).', err);
+    }
 
     applyFilters();
-
-    map.on('click', 'locations-circle', (event) => {
-      const feature = event.features && event.features[0];
-      if (feature) openDetails(feature);
-    });
-    map.on('mouseenter', 'locations-circle', () => {
-      map.getCanvas().style.cursor = 'pointer';
-    });
-    map.on('mouseleave', 'locations-circle', () => {
-      map.getCanvas().style.cursor = '';
-    });
   }
 
   function applyFilters() {
@@ -227,7 +272,81 @@
     updateVisibleCount();
   }
 
-  // ----- category panel -----
+  // ----------------------------------------------------------
+  // basemap switching
+  // ----------------------------------------------------------
+  function buildBasemapSelect() {
+    const sel = document.getElementById('basemap-select');
+    const byGroup = new Map();
+    for (const bm of BASEMAPS) {
+      if (!byGroup.has(bm.group)) byGroup.set(bm.group, []);
+      byGroup.get(bm.group).push(bm);
+    }
+
+    const html = [];
+    for (const [group, items] of byGroup) {
+      html.push(`<optgroup label="${escapeHtml(group)}">`);
+      for (const bm of items) {
+        html.push(
+          `<option value="${escapeHtml(bm.id)}"${bm.id === state.basemap ? ' selected' : ''}>` +
+          `${escapeHtml(bm.label)}</option>`
+        );
+      }
+      html.push('</optgroup>');
+    }
+    sel.innerHTML = html.join('');
+    sel.value = state.basemap;
+
+    sel.addEventListener('change', (e) => setBasemap(e.target.value));
+  }
+
+  function setBasemap(id) {
+    const bm = BASEMAPS.find((b) => b.id === id);
+    if (!bm || !map) return;
+
+    const previous = state.basemap;
+    state.basemap = id;
+
+    // Preserve camera and camera mode; only the style is replaced.
+    map.setStyle(bm.url, { diff: false });
+
+    let settled = false;
+    const onStyleLoad = () => {
+      if (settled) return;
+      settled = true;
+      restoreAfterStyleChange();
+    };
+
+    map.once('style.load', onStyleLoad);
+
+    // If the style endpoint fails, fall back rather than leaving a blank map.
+    setTimeout(() => {
+      if (settled) return;
+      settled = true;
+      console.warn(`Basemap "${id}" did not load; reverting to "${previous}".`);
+      state.basemap = previous;
+      document.getElementById('basemap-select').value = previous;
+      const fallback = BASEMAPS.find((b) => b.id === previous);
+      if (fallback) {
+        map.setStyle(fallback.url, { diff: false });
+        map.once('style.load', restoreAfterStyleChange);
+      }
+    }, 12000);
+  }
+
+  function restoreAfterStyleChange() {
+    // Projection is part of the style/camera state and must be reapplied.
+    try {
+      map.setProjection({ type: state.globe ? 'globe' : 'mercator' });
+    } catch (err) {
+      console.warn('Could not restore projection.', err);
+    }
+    if (state.data) addDataLayers(state.data);
+  }
+
+  // ----------------------------------------------------------
+  // category panel
+  // ----------------------------------------------------------
   function buildCategoryList(gj) {
     const counts = {};
     for (const f of gj.features) {
@@ -273,7 +392,9 @@
     });
   }
 
-  // ----- details panel -----
+  // ----------------------------------------------------------
+  // details panel
+  // ----------------------------------------------------------
   function openDetails(feature) {
     const p = feature.properties || {};
     const cat = CATEGORIES[p.category] || {
@@ -283,6 +404,8 @@
     const coords = feature.geometry && feature.geometry.coordinates;
     const lon = coords ? coords[0] : NaN;
     const lat = coords ? coords[1] : NaN;
+
+    state.selectedId = p.feature_id;
 
     const parts = [];
     parts.push(
@@ -327,11 +450,7 @@
 
     if (Number.isFinite(lat) && Number.isFinite(lon)) {
       if (window.innerWidth > 640) {
-        map.easeTo({
-          center: [lon, lat],
-          offset: [-200, 0],
-          duration: 500,
-        });
+        map.easeTo({ center: [lon, lat], offset: [-200, 0], duration: 500 });
       } else {
         map.easeTo({ center: [lon, lat], duration: 500 });
       }
@@ -339,6 +458,7 @@
   }
 
   function closeDetails() {
+    state.selectedId = null;
     document.getElementById('details').classList.remove('open');
     document.getElementById('details').setAttribute('aria-hidden', 'true');
     document.body.classList.remove('details-open');
@@ -374,7 +494,9 @@
     return `<div class="field">${header}${body}</div>`;
   }
 
-  // ----- toggles -----
+  // ----------------------------------------------------------
+  // toggles
+  // ----------------------------------------------------------
   function bindToggles() {
     document.querySelectorAll('.row-buttons button').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -404,13 +526,16 @@
     document.getElementById('details-close').addEventListener('click', closeDetails);
 
     document.getElementById('globe-toggle').addEventListener('change', (e) => {
-      const type = e.target.checked ? 'globe' : 'mercator';
+      state.globe = e.target.checked;
       try {
-        map.setProjection({ type });
+        map.setProjection({ type: state.globe ? 'globe' : 'mercator' });
       } catch (err) {
         console.warn('Globe projection not available.', err);
-        e.target.checked = !e.target.checked;
-        alert('Globe projection is not supported in this browser. Try a recent Chrome, Safari, or Firefox.');
+        state.globe = false;
+        e.target.checked = false;
+        alert(
+          'Globe projection is not supported here. Try a recent Chrome, Safari, or Firefox.'
+        );
       }
     });
 
@@ -430,7 +555,9 @@
     });
   }
 
-  // ----- error surface -----
+  // ----------------------------------------------------------
+  // error surface
+  // ----------------------------------------------------------
   function showFatalError(message) {
     const el = document.createElement('div');
     el.className = 'panel';
@@ -443,9 +570,12 @@
     document.body.appendChild(el);
   }
 
-  // ----- boot -----
+  // ----------------------------------------------------------
+  // boot
+  // ----------------------------------------------------------
   async function bootstrap() {
     createMap();
+    buildBasemapSelect();
 
     try {
       state.data = await loadData();
@@ -475,7 +605,6 @@
     };
 
     map.once('load', onMapReady);
-    // Fallback in case the style never finishes loading
     setTimeout(onMapReady, 10000);
   }
 

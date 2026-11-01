@@ -3,27 +3,22 @@
 
   // ==========================================================
   // Basemaps — free, no API key
-  // From https://makewithmaplibre.com/basemaps/ (Free to use)
-  // Only entries that expose a ready-made style.json are listed;
-  // the page's elevation tiles (Terrarium, Mapterhorn), MIERUNE
-  // raster tiles, and Seamap/Seascape raster services are not
-  // drop-in styles and are therefore omitted.
+  //   • Vector styles: https://makewithmaplibre.com/basemaps/
+  //   • Satellite: inline raster styles (no style.json URL)
+  // Each entry is either { url: '…style.json' } or { style: {…} }.
   // ==========================================================
   const BASEMAPS = [
-    { id: 'ofm-dark',      label: 'Dark — OpenFreeMap',        url: 'https://tiles.openfreemap.org/styles/dark',      group: 'OpenFreeMap' },
-    { id: 'ofm-positron',  label: 'Positron — OpenFreeMap',    url: 'https://tiles.openfreemap.org/styles/positron',  group: 'OpenFreeMap' },
-    { id: 'ofm-liberty',   label: 'Liberty — OpenFreeMap',     url: 'https://tiles.openfreemap.org/styles/liberty',   group: 'OpenFreeMap' },
-    { id: 'ofm-bright',    label: 'Bright — OpenFreeMap',      url: 'https://tiles.openfreemap.org/styles/bright',    group: 'OpenFreeMap' },
-    { id: 'ofm-fiord',     label: 'Fiord — OpenFreeMap',       url: 'https://tiles.openfreemap.org/styles/fiord',     group: 'OpenFreeMap' },
-    { id: 'americana',     label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
-    { id: 'colorful',      label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
-    { id: 'demotiles',     label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
-    
-  // ==========================================================
-  // Basemaps — free, no API key
-  // ==========================================================
-  
-    // ── satellite (paste these three) ───────────────────────
+    // ── vector, URL-referenced ─────────────────────────────
+    { id: 'ofm-dark',     label: 'Dark — OpenFreeMap',        url: 'https://tiles.openfreemap.org/styles/dark',      group: 'OpenFreeMap' },
+    { id: 'ofm-positron', label: 'Positron — OpenFreeMap',    url: 'https://tiles.openfreemap.org/styles/positron',  group: 'OpenFreeMap' },
+    { id: 'ofm-liberty',  label: 'Liberty — OpenFreeMap',     url: 'https://tiles.openfreemap.org/styles/liberty',   group: 'OpenFreeMap' },
+    { id: 'ofm-bright',   label: 'Bright — OpenFreeMap',      url: 'https://tiles.openfreemap.org/styles/bright',    group: 'OpenFreeMap' },
+    { id: 'ofm-fiord',    label: 'Fiord — OpenFreeMap',       url: 'https://tiles.openfreemap.org/styles/fiord',     group: 'OpenFreeMap' },
+    { id: 'americana',    label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
+    { id: 'colorful',     label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
+    { id: 'demotiles',    label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
+
+    // ── satellite, inline raster styles ────────────────────
     {
       id: 'eox-s2',
       label: 'Sentinel-2 — EOX Cloudless',
@@ -76,8 +71,6 @@
         layers: [{ id: 'usgs-imagery', type: 'raster', source: 'usgs-imagery' }],
       },
     },
-    // ────────────────────────────────────────────────────────
-  ];
   ];
 
   const DEFAULT_BASEMAP = 'ofm-dark';
@@ -137,6 +130,8 @@
   const humanize = (k) =>
     k.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 
+  const resolveStyle = (bm) => (bm && (bm.url || bm.style)) || null;
+
   // ----------------------------------------------------------
   // data
   // ----------------------------------------------------------
@@ -185,14 +180,18 @@
   // ----------------------------------------------------------
   function createMap() {
     const bm = BASEMAPS.find((b) => b.id === state.basemap) || BASEMAPS[0];
+    const styleArg = resolveStyle(bm);
+    if (!styleArg) {
+      throw new Error(`Default basemap "${bm.id}" has neither url nor style.`);
+    }
 
     map = new maplibregl.Map({
       container: 'map',
-      style: bm.url,
+      style: styleArg,
       center: DEFAULT_VIEW.center,
       zoom: DEFAULT_VIEW.zoom,
       minZoom: 1,
-      maxZoom: 16,
+      maxZoom: 18,
       attributionControl: false,
     });
 
@@ -203,12 +202,11 @@
     );
 
     // Attribution, also bottom-left, sitting under the zoom buttons.
-    // Compact pill; expands on click.
     map.addControl(
       new maplibregl.AttributionControl({
         compact: true,
         customAttribution:
-          '© OpenStreetMap contributors · Basemaps: OpenFreeMap, OSM Americana, VersaTiles, MapLibre · Data: R. Graysmith, <i>Zodiac</i> (1986)',
+          '© OpenStreetMap contributors · Basemaps: OpenFreeMap, OSM Americana, VersaTiles, MapLibre, EOX, Esri, USGS · Data: R. Graysmith, <i>Zodiac</i> (1986)',
       }),
       'bottom-left'
     );
@@ -234,7 +232,6 @@
   }
 
   function addDataLayers(gj) {
-    // After setStyle everything custom is gone; guard anyway.
     if (map.getSource('locations')) {
       ['locations-halo', 'locations-circle', 'locations-selected', 'locations-label']
         .forEach((id) => { if (map.getLayer(id)) map.removeLayer(id); });
@@ -291,8 +288,7 @@
       },
     });
 
-    // Labels are optional and need glyphs from the style; a style without
-    // glyphs would throw here, so isolate the failure.
+    // Labels need glyphs; a raster (satellite) style has none, so isolate.
     try {
       map.addLayer({
         id: 'locations-label',
@@ -365,17 +361,13 @@
     if (!bm || !map) return;
 
     const previous = state.basemap;
-    state.basemap = id;
-
-    // A basemap entry is either a remote style URL (`url`)
-    // or an inline style object (`style`, e.g. raster satellite).
-    const styleArg = bm.url || bm.style;
+    const styleArg = resolveStyle(bm);
     if (!styleArg) {
       console.warn(`Basemap "${id}" has neither url nor style.`);
-      state.basemap = previous;
       return;
     }
 
+    state.basemap = id;
     map.setStyle(styleArg, { diff: false });
 
     let settled = false;
@@ -387,16 +379,17 @@
 
     map.once('style.load', onStyleLoad);
 
-    // If the style endpoint fails, fall back rather than leaving a blank map.
+    // If the style fails to load, revert rather than leave a blank canvas.
     setTimeout(() => {
       if (settled) return;
       settled = true;
       console.warn(`Basemap "${id}" did not load; reverting to "${previous}".`);
       state.basemap = previous;
-      document.getElementById('basemap-select').value = previous;
+      const sel = document.getElementById('basemap-select');
+      if (sel) sel.value = previous;
       const fallback = BASEMAPS.find((b) => b.id === previous);
-      if (fallback) {
-        const fbStyle = fallback.url || fallback.style;
+      const fbStyle = resolveStyle(fallback);
+      if (fbStyle) {
         map.setStyle(fbStyle, { diff: false });
         map.once('style.load', restoreAfterStyleChange);
       }
@@ -404,23 +397,28 @@
   }
 
   function restoreAfterStyleChange() {
-    // Projection is part of the style/camera state and must be reapplied.
     try {
       map.setProjection({ type: state.globe ? 'globe' : 'mercator' });
     } catch (err) {
       console.warn('Could not restore projection.', err);
     }
+
     if (state.data) addDataLayers(state.data);
-    const isRaster = !map.getStyle().glyphs;
-const labelsCb = document.getElementById('labels-toggle');
-labelsCb.disabled = isRaster;
-if (isRaster && labelsCb.checked) {
-  labelsCb.checked = false;
-  state.labelsOn = false;
-  if (map.getLayer('locations-label')) {
-    map.setLayoutProperty('locations-label', 'visibility', 'none');
-  }
-}
+
+    // Raster basemaps ship no glyphs, so the label toggle would be a no-op.
+    const style = map.getStyle();
+    const isRaster = !style || !style.glyphs;
+    const labelsCb = document.getElementById('labels-toggle');
+    if (labelsCb) {
+      labelsCb.disabled = isRaster;
+      if (isRaster && labelsCb.checked) {
+        labelsCb.checked = false;
+        state.labelsOn = false;
+        if (map.getLayer('locations-label')) {
+          map.setLayoutProperty('locations-label', 'visibility', 'none');
+        }
+      }
+    }
   }
 
   // ----------------------------------------------------------

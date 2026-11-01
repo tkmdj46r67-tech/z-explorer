@@ -1,14 +1,21 @@
 (() => {
   'use strict';
 
+  // ──────────────────────────────────────────────────────────────
+  // IMPORTANT — run fix_coordinates.py before deploying.
+  // JITTER_RADIUS below only separates intentionally co-located
+  // markers (e.g., Bob Starr's Santa Rosa home + trailer). It does
+  // not correct source-coordinate errors.
+  // ──────────────────────────────────────────────────────────────
+
   // ==========================================================
-  // Basemaps — free, no API key
-  //   • Vector styles: https://makewithmaplibre.com/basemaps/
-  //   • Satellite: inline raster styles (no style.json URL)
-  // Each entry is either { url: '…style.json' } or { style: {…} }.
+  // Basemaps
+  //   Vector styles: https://makewithmaplibre.com/basemaps/
+  //   Satellite: inline raster styles. Esri and USGS imagery have a
+  //   georeferencing offset of roughly 5–30 m in the Bay Area; use
+  //   vector basemaps for pinpoint accuracy on forensic claims.
   // ==========================================================
   const BASEMAPS = [
-    // ── vector, URL-referenced ─────────────────────────────
     { id: 'ofm-dark',     label: 'Dark — OpenFreeMap',        url: 'https://tiles.openfreemap.org/styles/dark',      group: 'OpenFreeMap' },
     { id: 'ofm-positron', label: 'Positron — OpenFreeMap',    url: 'https://tiles.openfreemap.org/styles/positron',  group: 'OpenFreeMap' },
     { id: 'ofm-liberty',  label: 'Liberty — OpenFreeMap',     url: 'https://tiles.openfreemap.org/styles/liberty',   group: 'OpenFreeMap' },
@@ -18,11 +25,11 @@
     { id: 'colorful',     label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
     { id: 'demotiles',    label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
 
-    // ── satellite, inline raster styles ────────────────────
+    // ── Satellite — reference only (imagery offsets apply) ─
     {
       id: 'eox-s2',
-      label: 'Sentinel-2 — EOX Cloudless',
-      group: 'Satellite',
+      label: 'Sentinel-2 — EOX Cloudless (reference)',
+      group: 'Satellite (reference only)',
       style: {
         version: 8,
         sources: {
@@ -38,8 +45,8 @@
     },
     {
       id: 'esri-imagery',
-      label: 'Satellite — Esri World Imagery',
-      group: 'Satellite',
+      label: 'Satellite — Esri (reference)',
+      group: 'Satellite (reference only)',
       style: {
         version: 8,
         sources: {
@@ -55,8 +62,8 @@
     },
     {
       id: 'usgs-imagery',
-      label: 'Satellite — USGS ImageryOnly',
-      group: 'Satellite',
+      label: 'Satellite — USGS (reference)',
+      group: 'Satellite (reference only)',
       style: {
         version: 8,
         sources: {
@@ -76,7 +83,7 @@
   const DEFAULT_BASEMAP = 'ofm-dark';
   const DATA_URL = 'data/zodiac_locations_enriched.geojson';
   const DEFAULT_VIEW = { center: [-121.7, 38.2], zoom: 6.2 };
-  const JITTER_RADIUS = 0.0012;
+  const JITTER_RADIUS = 0.0003; // ≈ 33 m — separates only co-located markers
 
   const CATEGORIES = {
     crime_scene:  { label: 'Crime scene',            color: '#ef4444' },
@@ -107,7 +114,6 @@
   const state = {
     visible: new Set(Object.keys(CATEGORIES)),
     labelsOn: false,
-    globe: false,
     basemap: DEFAULT_BASEMAP,
     data: null,
     selectedId: null,
@@ -153,6 +159,10 @@
     return gj;
   }
 
+  // Separate overlapping points onto a small circle. Only groups with
+  // identical rounded coordinates are displaced, and only by
+  // JITTER_RADIUS — small enough that the base coordinate is still
+  // visually correct at any reasonable zoom.
   function applyJitter(features) {
     const groups = new Map();
     features.forEach((f, i) => {
@@ -195,24 +205,22 @@
       attributionControl: false,
     });
 
-    // Zoom + compass, bottom-left
     map.addControl(
       new maplibregl.NavigationControl({ visualizePitch: true }),
       'bottom-left'
     );
 
-    // Attribution, also bottom-left, sitting under the zoom buttons.
     map.addControl(
       new maplibregl.AttributionControl({
         compact: true,
         customAttribution:
-          '© OpenStreetMap contributors · Basemaps: OpenFreeMap, OSM Americana, VersaTiles, MapLibre, EOX, Esri, USGS · Data: R. Graysmith, <i>Zodiac</i> (1986)',
+          '© OpenStreetMap contributors · Basemaps: OpenFreeMap, OSM Americana, VersaTiles, MapLibre · Satellite (reference): EOX, Esri, USGS · Data: R. Graysmith (1986, 2002); M.F. Cole (2020)',
       }),
       'bottom-left'
     );
 
-    // One map-level click handler. Using queryRenderedFeatures instead of
-    // layer-scoped listeners means switching styles cannot stack duplicates.
+    // Single map-level click handler. Using queryRenderedFeatures avoids
+    // stacking duplicate listeners across style swaps.
     map.on('click', (event) => {
       if (!map.getLayer('locations-circle')) return;
       const hits = map.queryRenderedFeatures(event.point, {
@@ -288,7 +296,7 @@
       },
     });
 
-    // Labels need glyphs; a raster (satellite) style has none, so isolate.
+    // Labels require glyphs; raster (satellite) styles have none.
     try {
       map.addLayer({
         id: 'locations-label',
@@ -333,6 +341,8 @@
   // ----------------------------------------------------------
   function buildBasemapSelect() {
     const sel = document.getElementById('basemap-select');
+    if (!sel) return;
+
     const byGroup = new Map();
     for (const bm of BASEMAPS) {
       if (!byGroup.has(bm.group)) byGroup.set(bm.group, []);
@@ -379,7 +389,6 @@
 
     map.once('style.load', onStyleLoad);
 
-    // If the style fails to load, revert rather than leave a blank canvas.
     setTimeout(() => {
       if (settled) return;
       settled = true;
@@ -397,15 +406,9 @@
   }
 
   function restoreAfterStyleChange() {
-    try {
-      map.setProjection({ type: state.globe ? 'globe' : 'mercator' });
-    } catch (err) {
-      console.warn('Could not restore projection.', err);
-    }
-
     if (state.data) addDataLayers(state.data);
 
-    // Raster basemaps ship no glyphs, so the label toggle would be a no-op.
+    // Raster basemaps ship no glyphs, so labels would be a no-op.
     const style = map.getStyle();
     const isRaster = !style || !style.glyphs;
     const labelsCb = document.getElementById('labels-toggle');
@@ -443,8 +446,10 @@
         </li>
       `);
     }
-    document.getElementById('category-list').innerHTML = items.join('');
-    document.getElementById('total-count').textContent = String(gj.features.length);
+    const el = document.getElementById('category-list');
+    if (el) el.innerHTML = items.join('');
+    const total = document.getElementById('total-count');
+    if (total) total.textContent = String(gj.features.length);
     updateVisibleCount();
   }
 
@@ -455,11 +460,14 @@
         sum += parseInt(li.querySelector('.count').textContent, 10);
       }
     });
-    document.getElementById('visible-count').textContent = String(sum);
+    const el = document.getElementById('visible-count');
+    if (el) el.textContent = String(sum);
   }
 
   function bindCategoryList() {
-    document.getElementById('category-list').addEventListener('change', (e) => {
+    const el = document.getElementById('category-list');
+    if (!el) return;
+    el.addEventListener('change', (e) => {
       const li = e.target.closest('li');
       if (!li) return;
       const cat = li.dataset.cat;
@@ -515,6 +523,7 @@
 
     const panel = document.getElementById('details');
     const body = document.getElementById('details-body');
+    if (!panel || !body) return;
     body.innerHTML = parts.join('');
     body.scrollTop = 0;
     panel.classList.add('open');
@@ -536,8 +545,11 @@
 
   function closeDetails() {
     state.selectedId = null;
-    document.getElementById('details').classList.remove('open');
-    document.getElementById('details').setAttribute('aria-hidden', 'true');
+    const panel = document.getElementById('details');
+    if (panel) {
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden', 'true');
+    }
     document.body.classList.remove('details-open');
     if (map && map.getLayer('locations-selected')) {
       map.setFilter('locations-selected', ['==', ['get', 'feature_id'], -1]);
@@ -596,36 +608,29 @@
       });
     });
 
-    document.getElementById('controls-toggle').addEventListener('click', () => {
-      document.getElementById('controls').classList.toggle('collapsed');
-    });
+    const controlsToggle = document.getElementById('controls-toggle');
+    if (controlsToggle) {
+      controlsToggle.addEventListener('click', () => {
+        document.getElementById('controls').classList.toggle('collapsed');
+      });
+    }
 
-    document.getElementById('details-close').addEventListener('click', closeDetails);
+    const detailsClose = document.getElementById('details-close');
+    if (detailsClose) detailsClose.addEventListener('click', closeDetails);
 
-    document.getElementById('globe-toggle').addEventListener('change', (e) => {
-      state.globe = e.target.checked;
-      try {
-        map.setProjection({ type: state.globe ? 'globe' : 'mercator' });
-      } catch (err) {
-        console.warn('Globe projection not available.', err);
-        state.globe = false;
-        e.target.checked = false;
-        alert(
-          'Globe projection is not supported here. Try a recent Chrome, Safari, or Firefox.'
-        );
-      }
-    });
-
-    document.getElementById('labels-toggle').addEventListener('change', (e) => {
-      state.labelsOn = e.target.checked;
-      if (map && map.getLayer('locations-label')) {
-        map.setLayoutProperty(
-          'locations-label',
-          'visibility',
-          state.labelsOn ? 'visible' : 'none'
-        );
-      }
-    });
+    const labelsToggle = document.getElementById('labels-toggle');
+    if (labelsToggle) {
+      labelsToggle.addEventListener('change', (e) => {
+        state.labelsOn = e.target.checked;
+        if (map && map.getLayer('locations-label')) {
+          map.setLayoutProperty(
+            'locations-label',
+            'visibility',
+            state.labelsOn ? 'visible' : 'none'
+          );
+        }
+      });
+    }
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeDetails();
@@ -673,7 +678,8 @@
         bindToggles();
 
         if (window.matchMedia('(max-width: 640px)').matches) {
-          document.getElementById('controls').classList.add('collapsed');
+          const controls = document.getElementById('controls');
+          if (controls) controls.classList.add('collapsed');
         }
       } catch (err) {
         console.error(err);

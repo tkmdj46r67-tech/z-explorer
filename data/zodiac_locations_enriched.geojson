@@ -7456,6 +7456,861 @@
         "similarities": "Like the Concerned Citizen's 1969 letter to Sgt. Lynch, a citizen report that was under-processed and nearly lost.",
         "geographic": "Los Angeles County; Pomona."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27,
+          38.11
+        ]
+      },
+      "properties": {
+        "name": "'Jack' Tarrance — alternate Zodiac suspect (d. 2006)",
+        "category": "suspect",
+        "description": "Approximate Vallejo-area residence associated with Jack Tarrance, named as a Zodiac suspect by his son-in-law Dennis Kaufman. Tarrance died in 2006; the theory has not been adopted by any law-enforcement agency.",
+        "summary": "One of several posthumous suspect claims in the case. Distinct from Graysmith's 1979 'Jack,' who was a former lawman and was ruled out by fingerprints.",
+        "context_label": "Alternate suspect (posthumous claim)",
+        "principal_people": [
+          "Jack Tarrance",
+          "Dennis Kaufman (son-in-law)",
+          "Vallejo PD"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "No forensic match has been established. The claim rests on circumstantial items held by Kaufman.",
+        "connections": [
+          "'Jack' — former Vallejo-area lawman suspect (1979)",
+          "Vallejo Police Department"
+        ],
+        "similarities": "Like Arthur Leigh Allen, a suspect surfaced through a family member's tip rather than police discovery.",
+        "geographic": "Vallejo area; exact address not published, point approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.256,
+          38.104
+        ]
+      },
+      "properties": {
+        "name": "'Jack' — former Vallejo-area lawman suspect (1979)",
+        "category": "suspect",
+        "description": "Approximate Vallejo-area location associated with the suspect Graysmith calls 'Jack': a tall, thin, bald former sheriff's deputy who had taken crime-scene photographs of Darlene Ferrin as souvenirs and was interviewed by Graysmith in 1979.",
+        "summary": "Ruled out by fingerprints (no match to the bloody Stine cab print) and by physical build. The episode illustrates how many police-adjacent figures surfaced during the case.",
+        "context_label": "Suspect residence / police-groupie profile",
+        "principal_people": [
+          "'Jack' (pseudonym)",
+          "Robert Graysmith",
+          "Darlene Ferrin",
+          "Vallejo PD"
+        ],
+        "context_type": [
+          "locale",
+          "legal",
+          "forensic"
+        ],
+        "financial_legal": "Had been fired from a sheriff's department; admitted keeping official Ferrin crime-scene photos as souvenirs.",
+        "connections": [
+          "Vallejo Police Department",
+          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+        ],
+        "similarities": "A police-adjacent suspect with access to evidence — the same profile as the 'Zodiac was a cop' theories.",
+        "geographic": "Vallejo; exact address not published, point is approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.24,
+          38.12
+        ]
+      },
+      "properties": {
+        "name": "Vallejo Hell's Angels residence / clubhouse",
+        "category": "suspect",
+        "description": "Approximate location of the Vallejo Hell's Angels residence in 1968–69. A disturbance at the residence occurred shortly before the Blue Rock Springs attack, a coincidence noted in Zodiac forums. Sergeant John Lynch initially suspected two Hell's Angels had committed the Lake Herman Road murders.",
+        "summary": "Part of the early suspect pool before the case converged on Arthur Leigh Allen. No forensic evidence tied any member to the crimes.",
+        "context_label": "Early suspect milieu / Hell's Angels",
+        "principal_people": [
+          "Sgt. John Lynch",
+          "Vallejo PD",
+          "Hell's Angels Vallejo chapter"
+        ],
+        "context_type": [
+          "locale",
+          "legal",
+          "conversation"
+        ],
+        "financial_legal": "Lynch and his partner had previously jailed two Angels on gas-station robbery charges; both were in prison by 1969.",
+        "connections": [
+          "Vallejo Police Department",
+          "Lake Herman Road – Gate #10 (Jensen-Faraday murders)",
+          "Pastime Bar, Benicia"
+        ],
+        "similarities": "The bar-and-clubhouse milieu that produced both suspects and informants — parallel to the Terry's Restaurant / Caesar's Palace social circuit.",
+        "geographic": "Vallejo; approximate, based on reported chapter presence in the late 1960s."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.158,
+          38.052
+        ]
+      },
+      "properties": {
+        "name": "Pastime Bar, 726 First Street, Benicia",
+        "category": "suspect",
+        "description": "Benicia bar and card room where Sergeant Lynch and Officer Rust traced a Ferrin suspect in 1969. The suspect had quit the Pastime and moved to Yountville; his landlady described him as 'kind of plump with dark straight hair.'",
+        "summary": "One of the specific bars in the early Ferrin investigation, before the case shifted to Allen. The building later became the Rellik Tavern.",
+        "context_label": "Early suspect tracing point / bar",
+        "principal_people": [
+          "Sgt. John Lynch",
+          "Officer Ed Rust",
+          "Mrs. Violet Peeler (landlady)",
+          "Benicia PD"
+        ],
+        "context_type": [
+          "locale",
+          "legal",
+          "conversation"
+        ],
+        "financial_legal": "The suspect had an airtight alibi; the lead did not pan out.",
+        "connections": [
+          "Vallejo Hell's Angels residence / clubhouse",
+          "Terry's Restaurant, Magazine Street, Vallejo",
+          "Jack's Hangout, Vallejo"
+        ],
+        "similarities": "A local bar as a suspect-tracing node — the same function Terry's served for Darlene's circle.",
+        "geographic": "Benicia; First Street, downtown."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25,
+          38.1
+        ]
+      },
+      "properties": {
+        "name": "Jack's Hangout, Vallejo",
+        "category": "suspect",
+        "description": "Vallejo bar next to Darlene Ferrin's old Wallace Street apartment. A bartender named 'Paul' reportedly pestered Darlene there and became 'sarcastic, mean, and bitter' when she refused him. The bar is named in the police report on Bill Leigh's questioning.",
+        "summary": "A specific bar in the Ferrin suspect file, before the case shifted to Allen. The 'Paul' lead was checked and eliminated.",
+        "context_label": "Early suspect tracing point / bar",
+        "principal_people": [
+          "'Paul' (bartender suspect)",
+          "Darlene Ferrin",
+          "Bill Leigh",
+          "Vallejo PD"
+        ],
+        "context_type": [
+          "locale",
+          "conversation",
+          "legal"
+        ],
+        "financial_legal": "No charges; the lead did not produce a viable suspect.",
+        "connections": [
+          "560 Wallace Street, Vallejo – Ferrin apartment",
+          "Pastime Bar, Benicia",
+          "Terry's Restaurant, Magazine Street, Vallejo"
+        ],
+        "similarities": "Another bar adjacent to a victim residence — the same geography of daily life that made suspect lists broad.",
+        "geographic": "Vallejo; approximate, near Wallace Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28,
+          38.11
+        ]
+      },
+      "properties": {
+        "name": "Iron Cross MC / American Nazi Party contact point (North Bay)",
+        "category": "suspect",
+        "description": "Approximate North Bay location associated with the Iron Cross Motorcycle Club and its overlap with the American Nazi Party in the late 1960s. Forum researchers have noted that Iron Cross members, including Don Sisco/Kurt Saxon and Allen Vincent, had the 'peculiar hobby of going to lover's lanes for the purpose of harassing people.'",
+        "summary": "A tangential outlaw-MC milieu sometimes raised in Zodiac forums, but never supported by forensic evidence. The 'lover's lane harassment' detail is the only overlap with the Zodiac pattern.",
+        "context_label": "Outlaw MC / extremist milieu (contested)",
+        "principal_people": [
+          "Don Sisco / Kurt Saxon",
+          "Allen Vincent",
+          "Mike Brown",
+          "George Lincoln Rockwell (American Nazi Party)"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "No direct connection to the Zodiac murders has been established.",
+        "connections": [
+          "Vallejo Hell's Angels residence / clubhouse",
+          "Lake Herman Road – Gate #10 (Jensen-Faraday murders)"
+        ],
+        "similarities": "Lover's-lane harassment is a surface similarity, not evidence. The overlap is thematic, not forensic.",
+        "geographic": "North Bay; exact location not published, point approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.256,
+          38.106
+        ]
+      },
+      "properties": {
+        "name": "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+        "category": "police",
+        "description": "Vallejo City Hall, where the five-day joint police and firefighter strike began on July 17, 1969 — two weeks after the Blue Rock Springs attack and days after Ascension Episcopal Church burned. City officials spent up to 20 hours a day locked inside, surrounded by picketing union members and media.",
+        "summary": "Only the second joint police-fire strike in U.S. history. A handful of non-union officers and CHP/Forestry reinforcements patrolled the city. The strike directly led to binding arbitration in Vallejo.",
+        "context_label": "Labor action / policing vacuum",
+        "principal_people": [
+          "Vallejo PD",
+          "Vallejo Fire Department",
+          "Mayor Gloria Exline",
+          "Councilman Terry Curtola",
+          "City Manager Donald McIntyre",
+          "CHP",
+          "California Department of Forestry"
+        ],
+        "context_type": [
+          "event",
+          "legal",
+          "locale"
+        ],
+        "financial_legal": "Voters passed binding arbitration (Section 809) in response; enacted 1971. McIntyre warned it would erode representative control over service levels.",
+        "connections": [
+          "Casa de Vallejo hotel — union strike headquarters",
+          "Ascension Episcopal Church, Vallejo — 1969 fire",
+          "Vallejo Police Department"
+        ],
+        "similarities": "A policing vacuum at the height of the Zodiac scare — the same jurisdictional and manpower gaps that run through the whole case.",
+        "geographic": "Vallejo; downtown civic center."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.254,
+          38.107
+        ]
+      },
+      "properties": {
+        "name": "Casa de Vallejo hotel — union strike headquarters",
+        "category": "police",
+        "description": "Hotel on the same block as City Hall where police and fire union leadership moved their headquarters during the 1969 strike, taking over an entire floor.",
+        "summary": "The operational nerve center of the strike, and a symbol of how labor politics competed with the Zodiac investigation for the department's attention.",
+        "context_label": "Labor action / command post",
+        "principal_people": [
+          "Vallejo police union",
+          "Vallejo fire union",
+          "City officials"
+        ],
+        "context_type": [
+          "event",
+          "legal",
+          "locale"
+        ],
+        "financial_legal": "The hotel was built in 1919 as the Industrial YMCA and reopened as a luxury hotel in 1928.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+          "Vallejo Police Department"
+        ],
+        "similarities": "A command post outside City Hall — the same fragmented-command pattern as the multi-agency Zodiac investigation.",
+        "geographic": "Vallejo; downtown, same block as City Hall."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.256,
+          38.103
+        ]
+      },
+      "properties": {
+        "name": "Ascension Episcopal Church, Georgia Street — 1969 fire",
+        "category": "landmark",
+        "description": "Historic Episcopal church on Georgia Street, built 1868, destroyed by fire in 1969 — days before the police/fire strike. The fire heightened public anxiety already running high from the Blue Rock Springs attack.",
+        "summary": "A pre-strike trauma that fed the sense of a city losing control. The church had recently celebrated its 100th anniversary.",
+        "context_label": "Pre-strike civic trauma",
+        "principal_people": [
+          "Ascension Episcopal Church parishioners",
+          "Vallejo Fire Department"
+        ],
+        "context_type": [
+          "event",
+          "locale"
+        ],
+        "financial_legal": "The fire's cause is not established in the sources reviewed; the timing is what makes it relevant to the strike context.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+          "Casa de Vallejo hotel — union strike headquarters"
+        ],
+        "similarities": "A civic landmark destroyed just before a labor crisis — the same atmosphere of disorder that the Zodiac letters exploited.",
+        "geographic": "Vallejo; Georgia Street, downtown."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.256,
+          38.104
+        ]
+      },
+      "properties": {
+        "name": "Vallejo Police Department — 1969 understaffing context",
+        "category": "police",
+        "description": "VPD headquarters during the strike period. Officers later cited understaffing and missing equipment as reasons for the walkout: 'inferior and in some areas, we had no equipment at all.'",
+        "summary": "The same department hunting Zodiac was operating with what its own officers described as inadequate resources — a context that shaped the Ferrin and Lake Herman Road investigations.",
+        "context_label": "Police labor / resource context",
+        "principal_people": [
+          "Vallejo PD rank and file",
+          "Chief Jack Stiltz",
+          "City Manager Donald McIntyre"
+        ],
+        "context_type": [
+          "event",
+          "legal",
+          "locale"
+        ],
+        "financial_legal": "The strike led to binding arbitration and, in the longer run, to the city's fiscal struggles.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+          "Casa de Vallejo hotel — union strike headquarters"
+        ],
+        "similarities": "Resource strain — the same theme as the interdepartmental jealousy among Bay Area agencies.",
+        "geographic": "Vallejo; downtown."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.254,
+          38.107
+        ]
+      },
+      "properties": {
+        "name": "'Blue Power' — Vallejo police militancy context",
+        "category": "police",
+        "description": "Approximate civic-gathering point associated with the 'Blue Power' current in Vallejo police politics in 1969–71. William J. Bopp's The Police Rebellion: A Quest for Blue Power includes a chapter-length case study titled 'Incident at Vallejo.'",
+        "summary": "The same department hunting Zodiac was also radicalized by pay, staffing, and equipment grievances — a dynamic that shaped how the Ferrin and Lake Herman Road investigations were resourced.",
+        "context_label": "Police labor / political context",
+        "principal_people": [
+          "William J. Bopp (author)",
+          "Vallejo PD rank and file",
+          "Ed Cray ('The Politics of Blue Power')"
+        ],
+        "context_type": [
+          "event",
+          "legal",
+          "locale"
+        ],
+        "financial_legal": "Vallejo was one of six U.S. cities (with Detroit, New York, Boston, San Francisco, and Pittstown, Mass.) treated as a case study in the national police-rebellion literature.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+          "Vallejo Police Department — 1969 understaffing context"
+        ],
+        "similarities": "Like the interdepartmental jealousy among Bay Area agencies, internal labor politics competed with the Zodiac investigation for attention.",
+        "geographic": "Vallejo; approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.23,
+          38.14
+        ]
+      },
+      "properties": {
+        "name": "Coronado Inn, 1506 Sears Point Road, Vallejo",
+        "category": "victim",
+        "description": "Nightclub on the outskirts of Vallejo near the intersection of Highways 37 and 29. Darlene Ferrin frequented it; Marie Antoinette Anstey disappeared from its parking lot on Friday, March 13, 1970, and was later found drowned in Lake County.",
+        "summary": "A specific nightlife location tying the Ferrin circle to a later possible Zodiac victim. Darlene's friend Sandy Betts also worked there.",
+        "context_label": "Victim social hub / possible abduction site",
+        "principal_people": [
+          "Darlene Ferrin",
+          "Marie Antoinette Anstey",
+          "Sandy Betts",
+          "Vallejo PD"
+        ],
+        "context_type": [
+          "locale",
+          "event",
+          "legal"
+        ],
+        "financial_legal": "Anstey's body was found nude; her clothing was never recovered. The case remains unsolved and is sometimes linked to Zodiac.",
+        "connections": [
+          "Terry's Restaurant, Magazine Street, Vallejo",
+          "Mr. Ed's Restaurant, Vallejo",
+          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+        ],
+        "similarities": "A nightclub at the edge of town near highway junctions — the same water-and-road geography as the canonical scenes.",
+        "geographic": "Vallejo; north side, near Highways 37 and 29."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.235,
+          38.14
+        ]
+      },
+      "properties": {
+        "name": "Mr. Ed's Restaurant, Vallejo",
+        "category": "victim",
+        "description": "Drive-in restaurant next door to the Coronado Inn, where Darlene Ferrin and Mike Mageau stopped on July 4, 1969, before driving to Blue Rock Springs. Betty Lou Jensen and David Faraday had also stopped at Mr. Ed's on the night of their murders.",
+        "summary": "A specific shared waypoint between two victim pairs — one of the few places where the Ferrin and Jensen-Faraday timelines physically overlap.",
+        "context_label": "Victim waypoint / shared location",
+        "principal_people": [
+          "Darlene Ferrin",
+          "Michael Mageau",
+          "Betty Lou Jensen",
+          "David Faraday"
+        ],
+        "context_type": [
+          "locale",
+          "event"
+        ],
+        "financial_legal": "The restaurant's phone number was found on a photo envelope in Darlene's purse, along with handwritten words including 'hacked,' 'stuck,' 'testified,' and 'seen.'",
+        "connections": [
+          "Coronado Inn, 1506 Sears Point Road, Vallejo",
+          "Terry's Restaurant, Magazine Street, Vallejo",
+          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)",
+          "Lake Herman Road – Gate #10 (Jensen-Faraday murders)"
+        ],
+        "similarities": "A drive-in on the route to a lovers' lane — the same pattern at both Lake Herman Road and Blue Rock Springs.",
+        "geographic": "Vallejo; near the Coronado Inn."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.236,
+          38.104
+        ]
+      },
+      "properties": {
+        "name": "Terry's Restaurant, Magazine Street, Vallejo — specific location",
+        "category": "victim",
+        "description": "The restaurant where Darlene Ferrin worked and where a stocky stranger watched her, asked about her finances, and where she first voiced fear after the Lake Herman Road murders. The building is no longer standing; the point is approximate.",
+        "summary": "Already in your dataset as a victim workplace; this entry adds the specific intersection and the detail that the building has been demolished.",
+        "context_label": "Victim workplace (confirmed location)",
+        "principal_people": [
+          "Darlene Ferrin",
+          "Bobbie Ramos",
+          "Harley Scalley (manager)",
+          "Linda Del Buono",
+          "Pam Suennen"
+        ],
+        "context_type": [
+          "locale",
+          "conversation",
+          "action"
+        ],
+        "financial_legal": "Darlene's waitressing job; tips were a subject the stranger pried into.",
+        "connections": [
+          "560 Wallace Street, Vallejo – Ferrin apartment",
+          "1300 Virginia Street, Vallejo – Ferrin new home",
+          "Mr. Ed's Restaurant, Vallejo",
+          "Coronado Inn, 1506 Sears Point Road, Vallejo"
+        ],
+        "similarities": "The social hub of the Ferrin case — the same function the Coronado Inn served at night.",
+        "geographic": "Vallejo; Magazine Street, near Tennessee."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419,
+          37.785
+        ]
+      },
+      "properties": {
+        "name": "Mitchell Brothers O'Farrell Theatre, 895 O'Farrell Street, San Francisco",
+        "category": "landmark",
+        "description": "Adult theater and strip club opened by Jim and Artie Mitchell on July 4, 1969 — the same day as the Blue Rock Springs attack. In the early 1970s it was a center of San Francisco's adult-film economy and a node in the porn-theater circuit sometimes invoked in snuff-film theories.",
+        "summary": "A cultural landmark of the era's adult-entertainment industry, included for context rather than as a verified Zodiac location. No evidence ties the theater to the murders.",
+        "context_label": "Adult-theater milieu (contested/contextual)",
+        "principal_people": [
+          "Jim Mitchell",
+          "Artie Mitchell",
+          "John Holmes (performer)"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "Opened July 4, 1969; one of America's oldest and most notorious adult-entertainment establishments.",
+        "connections": [
+          "Adult-theater district, San Francisco — contested snuff-film theory",
+          "Avenue Theatre, 2650 San Bruno Avenue, San Francisco"
+        ],
+        "similarities": "The opening date coincidence is striking but not evidential.",
+        "geographic": "San Francisco; Tenderloin, 895 O'Farrell Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41,
+          37.785
+        ]
+      },
+      "properties": {
+        "name": "Adult-theater district, Market/Geary, San Francisco — contested snuff-film theory",
+        "category": "landmark",
+        "description": "Approximate Market/Geary adult-theater block sometimes invoked in snuff-film theories about Zodiac. The 1971 pornographic horror film Zodiac Rapist, starring John Holmes, was loosely based on the Zodiac crimes.",
+        "summary": "A theoretical/cultural point, not a verified case location. It reflects how the Zodiac persona circulated through exploitation cinema and the porn-theater economy of the early 1970s.",
+        "context_label": "Contested / theoretical snuff-film milieu",
+        "principal_people": [
+          "John Holmes (actor)",
+          "John Lamb (producer, Zodiac Rapist)",
+          "true-crime theorists"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "Zodiac Rapist (1971, 63 min., U.S.) was produced by John Lamb and released September 1971. Snuff-film claims remain unsubstantiated in the Zodiac case.",
+        "connections": [
+          "Mitchell Brothers O'Farrell Theatre, 895 O'Farrell Street, San Francisco",
+          "Golden Gate Theatre, San Francisco",
+          "Avenue Theatre, 2650 San Bruno Avenue, San Francisco"
+        ],
+        "similarities": "Like the silent-film and Most Dangerous Game motifs, another example of Zodiac's image being recycled by the culture industry.",
+        "geographic": "San Francisco; Market/Geary theater district, approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25,
+          34.05
+        ]
+      },
+      "properties": {
+        "name": "Zodiac Rapist production — Los Angeles (contested)",
+        "category": "out_of_state",
+        "description": "Approximate Los Angeles production location for Zodiac Rapist (1971), a 63-minute pornographic horror film starring John Holmes and produced by John Lamb. The film was shot in Los Angeles while the real Zodiac killings were still making headlines.",
+        "summary": "A cultural artifact of the Zodiac phenomenon, not a case location. It shows how quickly the killer's persona entered exploitation cinema.",
+        "context_label": "Exploitation-film production site (contested/contextual)",
+        "principal_people": [
+          "John Lamb (producer)",
+          "John Holmes (actor)",
+          "Andy Bellamy",
+          "Buddy Boone"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "The film is a hardcore feature with a 63-minute runtime; it was released in September 1971.",
+        "connections": [
+          "Adult-theater district, Market/Geary, San Francisco — contested snuff-film theory",
+          "Mitchell Brothers O'Farrell Theatre, 895 O'Farrell Street, San Francisco"
+        ],
+        "similarities": "Like the 1971 low-budget Zodiac film that played the Golden Gate Theatre, another instance of the case feeding the exploitation economy.",
+        "geographic": "Los Angeles; approximate, exact shooting locations not documented in the sources reviewed."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4,
+          37.73
+        ]
+      },
+      "properties": {
+        "name": "Avenue Theatre, 2650 San Bruno Avenue — projectionist and poster context",
+        "category": "suspect",
+        "description": "Silent-film revival house where Rick Marshall worked as projectionist and where black felt-tip movie posters were hand-lettered in a style closely resembling the Zodiac letters. Its domed ceiling was painted with all the signs of the Zodiac. A 1932 RKO print of The Most Dangerous Game played here in May 1969.",
+        "summary": "Already in your dataset; this entry adds the poster-handwriting detail and the specific Most Dangerous Game screening date.",
+        "context_label": "Suspect workplace / possible lettering source",
+        "principal_people": [
+          "Rick Marshall",
+          "Bob Vaughn (organist)",
+          "Robert Graysmith",
+          "Sherwood Morrill"
+        ],
+        "context_type": [
+          "locale",
+          "forensic",
+          "action"
+        ],
+        "financial_legal": "A 1932 RKO print of The Most Dangerous Game played here in May 1969 — the film that inspired the Zodiac M.O. The theater's Wurlitzer was installed in 1966 with Marshall's help.",
+        "connections": [
+          "143 Scott Street, San Francisco – Marshall basement apartment",
+          "Marvin Bernell's Riverside home",
+          "Golden Gate Theatre, San Francisco"
+        ],
+        "similarities": "Morrill said a poster from this theater was 'the closest Zodiac lettering I've seen.'",
+        "geographic": "San Francisco; San Bruno Avenue, Visitacion Valley."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.43,
+          37.75
+        ]
+      },
+      "properties": {
+        "name": "Bob Vaughn residence — alleged film-canister cache",
+        "category": "suspect",
+        "description": "Approximate San Francisco residence of Bob Vaughn, the silent-film organist who worked with Rick Marshall. A tipster told Graysmith that Marshall had hidden evidence from five victims inside movie canisters rigged to explode, and that the canisters had been moved to Vaughn's home.",
+        "summary": "The location of Graysmith's 1978 basement visit, later dramatized in the 2007 film Zodiac. Vaughn was never considered a credible suspect by police, but the episode is central to the Marshall theory.",
+        "context_label": "Alleged evidence cache / Graysmith investigation site",
+        "principal_people": [
+          "Bob Vaughn",
+          "Rick Marshall",
+          "Robert Graysmith",
+          "David Fincher (director, 2007 film)"
+        ],
+        "context_type": [
+          "locale",
+          "legal",
+          "action"
+        ],
+        "financial_legal": "Graysmith described the basement as dimly lit and filled with nitrate film records; he left convinced he was in danger. No canisters were ever recovered by police.",
+        "connections": [
+          "Avenue Theatre, 2650 San Bruno Avenue, San Francisco",
+          "143 Scott Street, San Francisco – Marshall basement apartment"
+        ],
+        "similarities": "Like the Bernell film-canister story, a cache of alleged evidence stored in a film collection.",
+        "geographic": "San Francisco; approximate, exact address not published."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.63,
+          41.88
+        ]
+      },
+      "properties": {
+        "name": "State Lake Theatre (Chicago) — Wurlitzer origin",
+        "category": "out_of_state",
+        "description": "Chicago theater where the Avenue Theatre's Wurlitzer organ was originally installed in 1928, before being moved to California in the 1960s and eventually to the Avenue.",
+        "summary": "A provenance point for the Avenue Theatre's organ, tying the San Francisco silent-film milieu to a national theater-organ circuit.",
+        "context_label": "Theater-organ provenance (contextual)",
+        "principal_people": [
+          "State Lake Theatre",
+          "Avenue Theatre staff",
+          "Rick Marshall"
+        ],
+        "context_type": [
+          "locale"
+        ],
+        "financial_legal": "The organ was later moved to the Towne Theatre in San Jose before being bought by a private collector.",
+        "connections": [
+          "Avenue Theatre, 2650 San Bruno Avenue, San Francisco"
+        ],
+        "similarities": "A physical link between the San Francisco theater and the wider American silent-film revival circuit.",
+        "geographic": "Chicago; approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.256,
+          38.106
+        ]
+      },
+      "properties": {
+        "name": "Vallejo Naval and Historical Museum — former City Hall",
+        "category": "landmark",
+        "description": "The historic City Hall building at 734 Marin Street, now the Vallejo Naval and Historical Museum. During the 1969 strike, city officials were locked inside for up to 20 hours a day while picketers surrounded the building.",
+        "summary": "The same building as the strike entry, but as a present-day landmark. Useful for mapping the strike's geography against the modern city.",
+        "context_label": "Civic landmark / strike site (present-day)",
+        "principal_people": [
+          "Vallejo Naval and Historical Museum",
+          "City of Vallejo"
+        ],
+        "context_type": [
+          "locale",
+          "event"
+        ],
+        "financial_legal": "The building was constructed between 1926 and 1927 as the city's administrative center.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike"
+        ],
+        "similarities": "A single building carrying both the strike history and the city's older civic identity.",
+        "geographic": "Vallejo; 734 Marin Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25,
+          38.102
+        ]
+      },
+      "properties": {
+        "name": "Vallejo Times-Herald office",
+        "category": "police",
+        "description": "Local newspaper that received one of the three July 31, 1969 Zodiac letters and that covered the strike, the Ferrin murder, and the early suspect investigations. The paper later had its Zodiac file stolen.",
+        "summary": "A media node in the case, and one of the three original cipher recipients. Its strike coverage shaped how residents experienced the policing vacuum.",
+        "context_label": "Media / letter recipient",
+        "principal_people": [
+          "Vallejo Times-Herald staff",
+          "Zodiac",
+          "Vallejo PD"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "The paper's Zodiac file was stolen at some point after 1986.",
+        "connections": [
+          "San Francisco Chronicle",
+          "San Francisco Examiner",
+          "Vallejo Police Department"
+        ],
+        "similarities": "Like the Chronicle and Examiner, a newspaper that became part of the killer's communication circuit.",
+        "geographic": "Vallejo; downtown."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25,
+          38.105
+        ]
+      },
+      "properties": {
+        "name": "Solano County Sheriff's Office — strike support role",
+        "category": "police",
+        "description": "The Sheriff's Office provided a few department heads to assist Vallejo PD during the 1969 strike, when only a handful of non-union officers and outside agencies were patrolling the city.",
+        "summary": "A specific mutual-aid point during the policing vacuum. The same office was already handling the Jensen-Faraday and Ferrin investigations.",
+        "context_label": "Mutual aid / strike support",
+        "principal_people": [
+          "Solano County Sheriff's Office",
+          "Vallejo PD",
+          "CHP"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "The office had jurisdiction over the unincorporated Lake Herman Road scene and was the lead agency on the Jensen-Faraday case.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+          "Lake Herman Road – Gate #10 (Jensen-Faraday murders)"
+        ],
+        "similarities": "The same agency that was chasing Zodiac was also plugging strike-related gaps — the resource strain is the common thread.",
+        "geographic": "Vallejo; near Virginia Street."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26,
+          38.11
+        ]
+      },
+      "properties": {
+        "name": "California Highway Patrol — strike reinforcement staging",
+        "category": "police",
+        "description": "Approximate CHP staging area in Vallejo during the July 1969 strike, when the CHP and California Department of Forestry were called in to reinforce the handful of non-union officers.",
+        "summary": "The outside agency that filled the policing gap during the strike. The CHP's presence is part of the same manpower story that runs through the Zodiac investigation.",
+        "context_label": "Strike reinforcement / outside agency",
+        "principal_people": [
+          "California Highway Patrol",
+          "California Department of Forestry",
+          "Vallejo PD"
+        ],
+        "context_type": [
+          "locale",
+          "legal"
+        ],
+        "financial_legal": "The CHP was also involved in the later Zodiac search and in traffic enforcement around the crime scenes.",
+        "connections": [
+          "Vallejo City Hall, 734 Marin Street — 1969 police/fire strike",
+          "Solano County Sheriff's Office — strike support role"
+        ],
+        "similarities": "The same outside-agency reinforcement pattern as the multi-county Zodiac task forces.",
+        "geographic": "Vallejo; approximate."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.256,
+          38.103
+        ]
+      },
+      "properties": {
+        "name": "Ascension Episcopal Church — present-day location",
+        "category": "landmark",
+        "description": "The present-day Ascension Episcopal Church at 2420 Tuolumne Street, Vallejo. The original Georgia Street church was destroyed by fire in 1969; the congregation later moved to this location.",
+        "summary": "A present-day anchor for the 1969 fire story. Useful if you want to distinguish the destroyed building from the current congregation.",
+        "context_label": "Present-day church (post-1969 fire)",
+        "principal_people": [
+          "Ascension Episcopal Church congregation"
+        ],
+        "context_type": [
+          "locale"
+        ],
+        "financial_legal": "The original church was built in 1868 and destroyed in 1969.",
+        "connections": [
+          "Ascension Episcopal Church, Georgia Street — 1969 fire"
+        ],
+        "similarities": "A continuity landmark — the congregation survived the fire, the building did not.",
+        "geographic": "Vallejo; 2420 Tuolumne Street."
+      }
     }
   ]
 }

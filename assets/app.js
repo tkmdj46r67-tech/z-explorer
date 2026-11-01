@@ -18,6 +18,77 @@
     { id: 'americana',     label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
     { id: 'colorful',      label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
     { id: 'demotiles',     label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
+    (() => {
+  'use strict';
+
+  // ==========================================================
+  // Basemaps — free, no API key
+  // ==========================================================
+  const BASEMAPS = [
+    { id: 'ofm-dark',      label: 'Dark — OpenFreeMap',        url: 'https://tiles.openfreemap.org/styles/dark',      group: 'OpenFreeMap' },
+    { id: 'ofm-positron',  label: 'Positron — OpenFreeMap',    url: 'https://tiles.openfreemap.org/styles/positron',  group: 'OpenFreeMap' },
+    { id: 'ofm-liberty',   label: 'Liberty — OpenFreeMap',     url: 'https://tiles.openfreemap.org/styles/liberty',   group: 'OpenFreeMap' },
+    { id: 'ofm-bright',    label: 'Bright — OpenFreeMap',      url: 'https://tiles.openfreemap.org/styles/bright',    group: 'OpenFreeMap' },
+    { id: 'ofm-fiord',     label: 'Fiord — OpenFreeMap',       url: 'https://tiles.openfreemap.org/styles/fiord',     group: 'OpenFreeMap' },
+    { id: 'americana',     label: 'Americana — OSM Americana', url: 'https://americanamap.org/style.json',            group: 'OSM Americana' },
+    { id: 'colorful',      label: 'Colorful — VersaTiles',     url: 'https://tiles.versatiles.org/assets/styles/colorful/style.json', group: 'VersaTiles' },
+    { id: 'demotiles',     label: 'Demotiles — MapLibre',      url: 'https://demotiles.maplibre.org/style.json',      group: 'MapLibre' },
+
+    // ── satellite (paste these three) ───────────────────────
+    {
+      id: 'eox-s2',
+      label: 'Sentinel-2 — EOX Cloudless',
+      group: 'Satellite',
+      style: {
+        version: 8,
+        sources: {
+          'eox-s2': {
+            type: 'raster',
+            tiles: ['https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpg'],
+            tileSize: 256,
+            attribution: 'EOxCloudless by EOX (Contains modified Copernicus Sentinel data 2025)',
+          },
+        },
+        layers: [{ id: 'eox-s2', type: 'raster', source: 'eox-s2' }],
+      },
+    },
+    {
+      id: 'esri-imagery',
+      label: 'Satellite — Esri World Imagery',
+      group: 'Satellite',
+      style: {
+        version: 8,
+        sources: {
+          'esri-imagery': {
+            type: 'raster',
+            tiles: ['https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+            tileSize: 256,
+            attribution: 'Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+          },
+        },
+        layers: [{ id: 'esri-imagery', type: 'raster', source: 'esri-imagery' }],
+      },
+    },
+    {
+      id: 'usgs-imagery',
+      label: 'Satellite — USGS ImageryOnly',
+      group: 'Satellite',
+      style: {
+        version: 8,
+        sources: {
+          'usgs-imagery': {
+            type: 'raster',
+            tiles: ['https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}'],
+            tileSize: 256,
+            maxzoom: 16,
+            attribution: 'USGS The National Map',
+          },
+        },
+        layers: [{ id: 'usgs-imagery', type: 'raster', source: 'usgs-imagery' }],
+      },
+    },
+    // ────────────────────────────────────────────────────────
+  ];
   ];
 
   const DEFAULT_BASEMAP = 'ofm-dark';

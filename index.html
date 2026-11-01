@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zodiac Killer Locations — Interactive Map</title>
+<meta name="description" content="Interactive map of locations from Robert Graysmith's Zodiac (1986): crime scenes, victim sites, suspect residences, letter postmarks, and landmarks." />
+
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div id="map"></div>
+
+<section id="controls" class="panel" aria-label="Filters and settings">
+  <header class="panel-header">
+    <h1>Zodiac locations</h1>
+    <button id="controls-toggle" class="icon-btn" aria-label="Collapse panel" title="Collapse">−</button>
+  </header>
+  <div class="panel-body">
+    <div class="row-buttons">
+      <button data-action="all">All</button>
+      <button data-action="none">None</button>
+      <button data-action="reset">Reset view</button>
+    </div>
+    <ul id="category-list" class="category-list"></ul>
+    <div class="row-toggles">
+      <label><input type="checkbox" id="globe-toggle" /> Globe view</label>
+      <label><input type="checkbox" id="labels-toggle" /> Show labels</label>
+    </div>
+    <div class="count">
+      <span id="visible-count">—</span> of <span id="total-count">—</span> locations
+    </div>
+  </div>
+</section>
+
+<aside id="details" class="panel details" aria-hidden="true">
+  <header class="panel-header">
+    <h2>Location details</h2>
+    <button id="details-close" class="icon-btn" aria-label="Close" title="Close">×</button>
+  </header>
+  <div id="details-body" class="panel-body"></div>
+</aside>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

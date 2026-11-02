@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1428,
-          38.0949
+          -122.144056,
+          38.094836
         ]
       },
       "properties": {
@@ -29,7 +29,7 @@
         ],
         "financial_legal": "Unincorporated Solano County, outside Benicia PD jurisdiction; no robbery or sexual motive.",
         "connections": [
-          "Blue Rock Springs Golf Course parking lot",
+          "Blue Rock Springs Park parking lot",
           "Benicia Water Pumping Station",
           "Lake Herman Road"
         ],
@@ -45,8 +45,9 @@
         "id": "lake_herman_road_gate_10_jensen_faraday_murders",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.144,38.0949"
+        "coordinate_precision": "documented_site",
+        "coordinate_note": "Documented turnout at the Benicia Water Pumping Station gate area; coordinate is a site-level reference, not a survey of each victim/evidence position.",
+        "coordinate_source": "https://www.zodiackillerfacts.com/reference/zodiac-reference-case-information/"
       }
     },
     {
@@ -54,15 +55,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1887,
-          38.1262
+          -122.190909,
+          38.125604
         ]
       },
       "properties": {
-        "name": "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)",
+        "name": "Blue Rock Springs Park parking area (Ferrin-Mageau attack)",
         "category": "crime_scene",
-        "description": "Parking lot of Blue Rock Springs Golf Course, Vallejo. Darlene Ferrin killed and Michael Mageau wounded July 4, 1969.",
-        "summary": "Golf course parking lot where Darlene Ferrin was killed and Michael Mageau wounded July 4, 1969.",
+        "description": "Parking area at Blue Rock Springs Park, across from the golf course, Vallejo. Darlene Ferrin was killed and Michael Mageau wounded July 4, 1969.",
+        "summary": "Park parking area where Darlene Ferrin was killed and Michael Mageau wounded July 4, 1969; this is at Blue Rock Springs Park, not the golf course.",
         "context_label": "Second Zodiac murder scene",
         "principal_people": [
           "Darlene Ferrin",
@@ -92,7 +93,10 @@
         "relative_to_mt_diablo": "~23 mi NW of Mt. Diablo",
         "id": "blue_rock_springs_golf_course_parking_lot_ferrin_mageau_attack",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "documented_site",
+        "coordinate_note": "Corrected to Blue Rock Springs Park, across from the golf course. The attack site is the park parking area, not the golf-course parking lot.",
+        "coordinate_source": "https://zodiackillerfacts.com/Graysmith-Crooked-Compass.htm"
       }
     },
     {
@@ -100,8 +104,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2306,
-          38.5634
+          -122.231938,
+          38.563619
         ]
       },
       "properties": {
@@ -140,8 +144,9 @@
         "id": "lake_berryessa_stabbing_site_shepard_hartnell_attack",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.2318,38.5634"
+        "coordinate_precision": "documented_site",
+        "coordinate_note": "Documented Lake Berryessa attack-site/island location; exact historical shoreline configuration may have changed.",
+        "coordinate_source": "https://oddstops.com/lake-berryessa"
       }
     },
     {
@@ -149,8 +154,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.45697,
-          37.78879
+          -122.456972,
+          37.788793
         ]
       },
       "properties": {
@@ -189,7 +194,11 @@
         "relative_to_mt_diablo": "~30 mi SW of Mt. Diablo",
         "id": "washington_cherry_streets_presidio_heights_stine_murder",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "documented_site",
+        "coordinate_note": "Incident address at 3898 Washington Street; existing coordinate was already essentially correct.",
+        "coordinate_source": "https://www.google.com/maps/search/?api=1&query=3898+Washington+Street+San+Francisco+CA",
+        "address": "3898 Washington Street, San Francisco, CA 94118"
       }
     },
     {
@@ -238,7 +247,10 @@
         "relative_to_mt_diablo": "~366 mi SE of Mt. Diablo",
         "id": "riverside_city_college_cheri_jo_bates_murder_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Approximate Riverside City College campus/alley location. Riverside Police identifies the discovery site as the alleyway of Terracina near Fairfax on the RCC campus; the precise point within the alley is not established by the public description.",
+        "coordinate_source": "https://www.riversideca.gov/rpd/about-contact/operations/investigations-division/cold-case-unit"
       }
     },
     {
@@ -246,7 +258,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.0288,
+          -122.03,
           37.25
         ]
       },
@@ -285,8 +297,8 @@
         "id": "villa_montalvo_saratoga_kathy_bilek_murder",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.03,37.25"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -332,7 +344,9 @@
         "relative_to_mt_diablo": "~62 mi NW of Mt. Diablo",
         "id": "franz_valley_road_santa_rosa_body_dump_site",
         "certainty": "possible",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -375,7 +389,9 @@
         "relative_to_mt_diablo": "~63 mi NW of Mt. Diablo",
         "id": "porter_creek_road_santa_rosa_body_dump_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -419,7 +435,9 @@
         "relative_to_mt_diablo": "~59 mi NW of Mt. Diablo",
         "id": "calistoga_road_santa_rosa_shallow_grave",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -463,7 +481,9 @@
         "relative_to_mt_diablo": "~42 mi W of Mt. Diablo",
         "id": "bolinas_lagoon_leona_roberts_body_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -508,7 +528,9 @@
         "relative_to_mt_diablo": "~31 mi WSW of Mt. Diablo",
         "id": "golden_gate_park_police_station_bombing",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -554,7 +576,9 @@
         "relative_to_mt_diablo": "~28 mi WSW of Mt. Diablo",
         "id": "754_stevenson_street_san_francisco_robert_salem_murder",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -597,7 +621,9 @@
         "relative_to_mt_diablo": "~32 mi WSW of Mt. Diablo",
         "id": "washington_high_school_san_francisco_nancy_cidley_body",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -645,7 +671,9 @@
         "relative_to_mt_diablo": "~52 mi SE of Mt. Diablo",
         "id": "maze_road_interstate_5_kathleen_johns_abduction",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -653,7 +681,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.5388,
+          -122.54,
           37.88
         ]
       },
@@ -691,8 +719,8 @@
         "id": "pine_hill_tamalpais_valley_isobel_watson_attack",
         "certainty": "possible",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.54,37.88"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -700,7 +728,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4838,
+          -122.485,
           37.718
         ]
       },
@@ -736,8 +764,8 @@
         "id": "lake_merced_san_francisco_linda_dudley_body",
         "certainty": "possible",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.485,37.718"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -780,7 +808,9 @@
         "relative_to_mt_diablo": "~132 mi S of Mt. Diablo",
         "id": "salinas_river_donna_braun_body",
         "certainty": "possible",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -827,7 +857,9 @@
         "relative_to_mt_diablo": "~22 mi NW of Mt. Diablo",
         "id": "123_ridgewood_vallejo_betty_lou_jensen_home",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -845,7 +877,9 @@
         "description": "Home of David Faraday, 17, killed Dec 20, 1968.",
         "id": "sereno_drive_vallejo_david_faraday_home",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -853,7 +887,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2438,
+          -122.245,
           38.095
         ]
       },
@@ -864,8 +898,8 @@
         "id": "560_wallace_street_vallejo_ferrin_apartment",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.245,38.095"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -873,7 +907,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2488,
+          -122.25,
           38.105
         ]
       },
@@ -912,8 +946,8 @@
         "id": "1300_virginia_street_vallejo_ferrin_new_home",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.25,38.105"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -921,7 +955,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2338,
+          -122.235,
           38.095
         ]
       },
@@ -960,8 +994,8 @@
         "id": "864_beechwood_avenue_vallejo_mike_mageau_home",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.235,38.095"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1034,7 +1068,9 @@
         ],
         "id": "terry_s_restaurant_magazine_street_vallejo",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1080,7 +1116,9 @@
         "relative_to_mt_diablo": "~24 mi NW of Mt. Diablo",
         "id": "caesar_s_palace_restaurant_80_14th_st_vallejo",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1088,7 +1126,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2362,
+          -122.235,
           38.095
         ]
       },
@@ -1123,8 +1161,8 @@
         "id": "hogan_high_school_vallejo",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.235,38.095"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1142,7 +1180,9 @@
         "description": "David Faraday's school.",
         "id": "vallejo_high_school",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1160,7 +1200,9 @@
         "description": "Home of Paul Stine, taxi driver killed Oct 11, 1969.",
         "id": "1842_fell_street_san_francisco_paul_stine_home",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1204,7 +1246,9 @@
         "relative_to_mt_diablo": "~366 mi SE of Mt. Diablo",
         "id": "4195_via_san_jose_riverside_cheri_jo_bates_home",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1222,7 +1266,9 @@
         "description": "Apartment of missing nurse Donna Lass (possible Zodiac victim).",
         "id": "225_mallorca_way_san_francisco_donna_lass_residence",
         "certainty": "possible",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -1230,7 +1276,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4402,
+          -122.4414,
           38.5766
         ]
       },
@@ -1241,8 +1287,8 @@
         "id": "pacific_union_college_angwin_shepard_hartnell",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.4414,38.5766"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1250,8 +1296,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.3888,
-          33.95
+          -117.396283,
+          33.94595
         ]
       },
       "properties": {
@@ -1287,8 +1333,10 @@
         "id": "st_catherine_s_church_riverside_bates",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-117.39,33.95"
+        "coordinate_precision": "verified_address",
+        "coordinate_note": "Current physical church site at 3680 Arlington Avenue (the parish office mailing address is on Brockton Avenue). The marker is an address-level reference for the church attended by Bates and her father.",
+        "coordinate_source": "https://www.sbdcatholics.org/sbd-parishes/1362/",
+        "address": "3680 Arlington Avenue, Riverside, CA 92506"
       }
     },
     {
@@ -1330,7 +1378,9 @@
         "relative_to_mt_diablo": "~366 mi SE of Mt. Diablo",
         "id": "sandy_s_restaurant_hardman_center_riverside_bates",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1338,7 +1388,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.3912,
+          -117.39,
           33.95
         ]
       },
@@ -1374,8 +1424,8 @@
         "id": "riverside_national_bank_bates",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-117.39,33.95"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1415,7 +1465,9 @@
         "relative_to_mt_diablo": "~367 mi SE of Mt. Diablo",
         "id": "ramona_high_school_riverside_bates",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1423,7 +1475,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2548,
+          -122.256,
           38.104
         ]
       },
@@ -1466,8 +1518,8 @@
         "id": "vallejo_police_department",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1511,7 +1563,9 @@
         "relative_to_mt_diablo": "~24 mi NW of Mt. Diablo",
         "id": "joe_s_union_station_phone_booth_tuolumne_springs_rd_vallejo",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1519,7 +1573,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2848,
+          -122.286,
           38.297
         ]
       },
@@ -1558,8 +1612,8 @@
         "id": "napa_police_department",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.286,38.297"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1602,7 +1656,9 @@
         "relative_to_mt_diablo": "~35 mi NW of Mt. Diablo",
         "id": "napa_car_wash_phone_booth_1231_main_st_napa",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1610,8 +1666,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.249629,
-          38.106141
+          -122.25,
+          38.105
         ]
       },
       "properties": {
@@ -1650,8 +1706,8 @@
         "id": "solano_county_sheriff_s_office",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.25,38.105"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1659,7 +1715,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1588,
+          -122.16,
           38.05
         ]
       },
@@ -1699,8 +1755,8 @@
         "id": "benicia_police_department",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.16,38.05"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1752,7 +1808,9 @@
         "relative_to_mt_diablo": "~28 mi WSW of Mt. Diablo",
         "id": "san_francisco_hall_of_justice",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1761,7 +1819,7 @@
         "type": "Point",
         "coordinates": [
           -122.286,
-          38.2982
+          38.297
         ]
       },
       "properties": {
@@ -1800,8 +1858,8 @@
         "id": "napa_county_sheriff_s_office",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.286,38.297"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1845,7 +1903,9 @@
         "relative_to_mt_diablo": "~32 mi SW of Mt. Diablo",
         "id": "san_bruno_postal_service_crime_lab",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -1888,7 +1948,9 @@
         "relative_to_mt_diablo": "~15.3 mi SE of Mt. Diablo",
         "id": "pleasanton_ca_la_times_letter_postmark",
         "certainty": "confirmed",
-        "location_type": "postmark"
+        "location_type": "postmark",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "Postmark city reference only; does not identify the actual mailing point or sender location."
       }
     },
     {
@@ -1896,7 +1958,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.5298,
+          -122.531,
           37.974
         ]
       },
@@ -1934,8 +1996,8 @@
         "id": "san_rafael_ca_red_phantom_letter_postmark",
         "certainty": "confirmed",
         "location_type": "postmark",
-        "jittered": true,
-        "jitter_group": "-122.531,37.974"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "Postmark city reference only; does not identify the actual mailing point or sender location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -1977,7 +2039,9 @@
         "relative_to_mt_diablo": "~19 mi SW of Mt. Diablo",
         "id": "alameda_county_badlands_letter_postmark",
         "certainty": "confirmed",
-        "location_type": "postmark"
+        "location_type": "postmark",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "Postmark city reference only; does not identify the actual mailing point or sender location."
       }
     },
     {
@@ -1985,7 +2049,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4178,
+          -122.419,
           37.775
         ]
       },
@@ -2023,8 +2087,8 @@
         "id": "san_francisco_most_zodiac_letters",
         "certainty": "confirmed",
         "location_type": "postmark",
-        "jittered": true,
-        "jitter_group": "-122.419,37.775"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "Postmark city reference only; does not identify the actual mailing point or sender location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2032,7 +2096,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.4928,
+          -121.494,
           38.582
         ]
       },
@@ -2070,8 +2134,8 @@
         "id": "sacramento_ci_i_questioned_documents",
         "certainty": "confirmed",
         "location_type": "postmark",
-        "jittered": true,
-        "jitter_group": "-121.494,38.582"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "Postmark city reference only; does not identify the actual mailing point or sender location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2115,7 +2179,9 @@
         "relative_to_mt_diablo": "~30 mi SW of Mt. Diablo",
         "id": "don_andrews_haight_ashbury_house",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -2133,7 +2199,9 @@
         "description": "Andrews' engine repair business (listed as 'Andrew Donaldson').",
         "id": "don_andrews_engine_shop_san_francisco",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -2141,7 +2209,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.3948,
+          -117.396,
           33.953
         ]
       },
@@ -2180,8 +2248,8 @@
         "id": "marvin_bernell_s_riverside_home",
         "certainty": "contested",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-117.396,33.953"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2189,8 +2257,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.255029,
-          38.104705
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -2229,8 +2297,8 @@
         "id": "bob_starr_s_vallejo_home_mother_s_house",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2238,7 +2306,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7088,
+          -122.71,
           38.44
         ]
       },
@@ -2301,8 +2369,8 @@
         "id": "bob_starr_s_santa_rosa_home",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.71,38.44"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2320,7 +2388,9 @@
         "description": "Isolated ranch house among pine trees; area flooded at time of Zodiac letter.",
         "id": "andy_walker_s_rural_home_vallejo_area",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -2328,7 +2398,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2488,
+          -122.25,
           38.1
         ]
       },
@@ -2339,8 +2409,8 @@
         "id": "andy_walker_s_workplace",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.25,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2383,7 +2453,9 @@
         "relative_to_mt_diablo": "~28 mi W of Mt. Diablo",
         "id": "fairmont_hotel_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2427,7 +2499,9 @@
         "relative_to_mt_diablo": "~27 mi W of Mt. Diablo",
         "id": "transamerica_building_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2469,7 +2543,9 @@
         "relative_to_mt_diablo": "0 mi",
         "id": "mt_diablo_contra_costa_county",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2515,7 +2591,9 @@
         "relative_to_mt_diablo": "~143 mi NE of Mt. Diablo",
         "id": "lake_tahoe_incline_village_nv",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2597,7 +2675,9 @@
         ],
         "id": "presidio_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2639,7 +2719,9 @@
         "relative_to_mt_diablo": "~30 mi W of Mt. Diablo",
         "id": "julius_kahn_playground_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2657,7 +2739,9 @@
         "description": "Zodiac could have fled north into Marin via the bridge.",
         "id": "golden_gate_bridge",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2665,8 +2749,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.249629,
-          38.101141
+          -122.25,
+          38.1
         ]
       },
       "properties": {
@@ -2676,8 +2760,8 @@
         "id": "mare_island_naval_shipyard_vallejo",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.25,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -2751,7 +2835,9 @@
         ],
         "id": "golden_gate_theatre_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2794,7 +2880,9 @@
         "relative_to_mt_diablo": "~28 mi W of Mt. Diablo",
         "id": "st_francis_hotel_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2839,7 +2927,9 @@
         "relative_to_mt_diablo": "~27.8 mi W of Mt. Diablo",
         "id": "geary_theatre_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2884,7 +2974,9 @@
         "note": "Base file places Curran essentially on top of Geary; keep but do not plot both as separate points without visual jitter.",
         "id": "curran_theatre_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2926,7 +3018,9 @@
         "relative_to_mt_diablo": "~27.8 mi W of Mt. Diablo",
         "id": "harold_s_books_and_magazines_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -2934,7 +3028,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.3988,
+          -122.4,
           37.78
         ]
       },
@@ -2973,8 +3067,8 @@
         "id": "kgo_tv_channel_7_studio_san_francisco",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.4,37.78"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3019,7 +3113,9 @@
         "relative_to_mt_diablo": "~27.6 mi SW of Mt. Diablo",
         "id": "st_vincent_de_paul_thrift_shop_6726_mission_st_daly_city",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3063,7 +3159,9 @@
         "relative_to_mt_diablo": "~51 mi NW of Mt. Diablo",
         "id": "moskowite_corners_general_store_lake_berryessa",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3108,7 +3206,9 @@
         "relative_to_mt_diablo": "~51 mi NW of Mt. Diablo",
         "id": "rancho_monticello_resort_lake_berryessa",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3126,7 +3226,9 @@
         "description": "Two miles south of the attack site.",
         "id": "lake_berryessa_park_headquarters",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3134,7 +3236,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1452,
+          -122.144,
           38.0949
         ]
       },
@@ -3145,8 +3247,8 @@
         "id": "benicia_water_pumping_station",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.144,38.0949"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3164,7 +3266,9 @@
         "description": "Isolated road between Vallejo and Benicia; first Zodiac murder site.",
         "id": "lake_herman_road",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3172,7 +3276,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.233,
+          -122.2318,
           38.5634
         ]
       },
@@ -3183,8 +3287,8 @@
         "id": "lake_berryessa",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.2318,38.5634"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3202,7 +3306,9 @@
         "description": "Near Lake Berryessa; mentioned in the 340-symbol cipher solution.",
         "id": "clear_lake",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3220,7 +3326,9 @@
         "description": "Teresa Matthews' body found near here, Feb 24, 1979.",
         "id": "russian_river",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -3228,7 +3336,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4862,
+          -122.485,
           37.718
         ]
       },
@@ -3239,8 +3347,8 @@
         "id": "lake_merced_san_francisco",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.485,37.718"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3248,8 +3356,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4196,
-          37.776039
+          -122.419,
+          37.775
         ]
       },
       "properties": {
@@ -3259,8 +3367,8 @@
         "id": "san_francisco",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.419,37.775"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3268,8 +3376,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.255629,
-          38.105141
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -3315,8 +3423,8 @@
         "id": "vallejo",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3324,7 +3432,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2872,
+          -122.286,
           38.297
         ]
       },
@@ -3335,8 +3443,8 @@
         "id": "napa",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.286,38.297"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3344,8 +3452,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1606,
-          38.051039
+          -122.16,
+          38.05
         ]
       },
       "properties": {
@@ -3355,8 +3463,8 @@
         "id": "benicia",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.16,38.05"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3364,8 +3472,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7106,
-          38.441039
+          -122.71,
+          38.44
         ]
       },
       "properties": {
@@ -3411,8 +3519,8 @@
         "id": "santa_rosa",
         "certainty": "possible",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.71,38.44"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3420,7 +3528,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.4952,
+          -121.494,
           38.582
         ]
       },
@@ -3431,8 +3539,8 @@
         "id": "sacramento",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-121.494,38.582"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3452,7 +3560,9 @@
         "context_label": "Linked-murder city (ruled out)",
         "id": "san_jose",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3472,7 +3582,9 @@
         "context_label": "Zodiac call recipient (Sam hoax)",
         "id": "oakland",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3492,7 +3604,9 @@
         "context_label": "Psychic claim (unverified)",
         "id": "berkeley",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3500,7 +3614,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.3972,
+          -117.396,
           33.953
         ]
       },
@@ -3545,8 +3659,8 @@
         "id": "riverside",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-117.396,33.953"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3566,7 +3680,9 @@
         "context_label": "Zodiac letter destination",
         "id": "los_angeles",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3586,7 +3702,9 @@
         "context_label": "Linked-murder city (ruled out)",
         "id": "santa_cruz",
         "certainty": "possible",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3594,7 +3712,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.0312,
+          -122.03,
           37.25
         ]
       },
@@ -3607,8 +3725,8 @@
         "id": "saratoga",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.03,37.25"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3628,7 +3746,9 @@
         "context_label": "Zodiac call recipient (possible crank)",
         "id": "palo_alto",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3636,7 +3756,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.5322,
+          -122.531,
           37.974
         ]
       },
@@ -3649,8 +3769,8 @@
         "id": "san_rafael",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.531,37.974"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3658,7 +3778,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.5412,
+          -122.54,
           37.88
         ]
       },
@@ -3671,8 +3791,8 @@
         "id": "tamalpais_valley",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.54,37.88"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3680,7 +3800,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9868,
+          -121.988,
           38.357
         ]
       },
@@ -3721,8 +3841,8 @@
         "id": "vacaville",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-121.988,38.357"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3766,7 +3886,9 @@
         "relative_to_mt_diablo": "~39 mi N of Mt. Diablo",
         "id": "dixon",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3812,7 +3934,9 @@
         "relative_to_mt_diablo": "~26 mi NW of Mt. Diablo",
         "id": "cordelia",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3856,7 +3980,9 @@
         "relative_to_mt_diablo": "~53 mi NW of Mt. Diablo",
         "id": "st_helena",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3864,7 +3990,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4426,
+          -122.4414,
           38.5766
         ]
       },
@@ -3905,8 +4031,8 @@
         "id": "angwin",
         "certainty": "confirmed",
         "location_type": "city_centroid",
-        "jittered": true,
-        "jitter_group": "-122.4414,38.5766"
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -3926,7 +4052,9 @@
         "context_label": "Route waypoint",
         "id": "rutherford",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -3970,7 +4098,9 @@
         "relative_to_mt_diablo": "~69 mi WNW of Mt. Diablo",
         "id": "bodega_bay",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4014,7 +4144,9 @@
         "relative_to_mt_diablo": "~97 mi NW of Mt. Diablo",
         "id": "lakeport",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4034,7 +4166,9 @@
         "context_label": "Possible linked-murder site",
         "id": "livermore",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4054,7 +4188,9 @@
         "context_label": "Possible victim site (unresolved)",
         "id": "hayward",
         "certainty": "possible",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4074,7 +4210,9 @@
         "context_label": "Possible victim site (unresolved)",
         "id": "monterey",
         "certainty": "possible",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4094,7 +4232,9 @@
         "context_label": "Possible linked-murder site",
         "id": "marysville",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4114,7 +4254,9 @@
         "context_label": "Bomb-threat call origin",
         "id": "san_mateo",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4158,7 +4300,9 @@
         "relative_to_mt_diablo": "~53 mi SE of Mt. Diablo",
         "id": "modesto",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4202,7 +4346,9 @@
         "relative_to_mt_diablo": "~51 mi SE of Mt. Diablo",
         "id": "patterson",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4222,7 +4368,9 @@
         "context_label": "Route waypoint",
         "id": "fresno",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4242,7 +4390,9 @@
         "context_label": "Route waypoint",
         "id": "merced",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4262,7 +4412,9 @@
         "context_label": "Route waypoint",
         "id": "bakersfield",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4303,7 +4455,9 @@
         "relative_to_mt_diablo": "~441 mi SSE of Mt. Diablo",
         "id": "san_diego",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4348,7 +4502,9 @@
         "country": "US",
         "id": "deer_lodge_montana",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4370,7 +4526,9 @@
         "country": "US",
         "id": "ogden_utah",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4392,7 +4550,9 @@
         "country": "US",
         "id": "merrill_wisconsin",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4414,7 +4574,9 @@
         "country": "US",
         "id": "avon_massachusetts",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4436,7 +4598,9 @@
         "country": "US",
         "id": "syracuse_new_york",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4458,7 +4622,9 @@
         "country": "US",
         "id": "kent_state_ohio",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4480,7 +4646,9 @@
         "country": "US",
         "id": "chicago_illinois",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4502,7 +4670,9 @@
         "country": "US",
         "id": "washington_d_c",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4524,7 +4694,9 @@
         "country": "US",
         "id": "lubbock_county_texas",
         "certainty": "contextual",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -4569,7 +4741,9 @@
         "country": "US",
         "id": "troutdale_oregon",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4620,7 +4794,9 @@
         "country": "US",
         "id": "loma_linda_california",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -4642,7 +4818,9 @@
         "country": "US",
         "id": "point_pleasant_west_virginia",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4664,7 +4842,9 @@
         "country": "US",
         "id": "chappaquiddick_massachusetts",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4686,7 +4866,9 @@
         "country": "US",
         "id": "indianapolis_indiana",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4733,7 +4915,9 @@
         },
         "id": "refugio_beach_gaviota_domingos_edwards_murder_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4780,7 +4964,9 @@
         },
         "id": "silver_spray_apartments_ocean_beach_san_diego_swindle_murder_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4813,7 +4999,9 @@
         "geographic": "San Diego.",
         "id": "doctor_s_hospital_san_diego",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4852,7 +5040,10 @@
         "geographic": "Riverside; off Terracina just east of the RCC library annex.",
         "id": "terracina_drive_between_3680_and_3692_riverside_bates_body_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Approximate Riverside City College campus/alley location. Riverside Police identifies the discovery site as the alleyway of Terracina near Fairfax on the RCC campus; the precise point within the alley is not established by the public description.",
+        "coordinate_source": "https://www.riversideca.gov/rpd/about-contact/operations/investigations-division/cold-case-unit"
       }
     },
     {
@@ -4887,7 +5078,9 @@
         "geographic": "Riverside; uphill road from UCR.",
         "id": "pigeon_pass_riverside_nov_22_1966_ucr_coed_attack",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4919,7 +5112,9 @@
         "geographic": "Riverside.",
         "id": "highgrove_riverside",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4956,7 +5151,9 @@
         "geographic": "Santa Barbara County; ~1 hr NW of Santa Barbara.",
         "id": "lompoc_california_domingos_edwards_home_town",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -4991,7 +5188,9 @@
         "geographic": "Santa Barbara County coast.",
         "id": "vandenberg_air_force_base",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -5025,7 +5224,9 @@
         "geographic": "Riverside County.",
         "id": "march_air_force_base_riverside",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -5062,7 +5263,9 @@
         "geographic": "San Luis Obispo; central coast.",
         "id": "cal_poly_san_luis_obispo_allen_attended",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5102,7 +5305,9 @@
         "geographic": "Pomona; eastern LA County.",
         "id": "cal_poly_pomona_cheney_panzarella_ron_allen_attended",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5135,7 +5340,9 @@
         "geographic": "Riverside County; 20 mi from Riverside.",
         "id": "hemet_mental_hospital_hemet_ca",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5143,7 +5350,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.7488,
+          -117.75,
           34.06
         ]
       },
@@ -5173,8 +5380,8 @@
         "id": "pomona_donald_cheney_home",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-117.75,34.06"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5214,7 +5421,9 @@
         "geographic": "Torrance; LA County South Bay.",
         "id": "science_dynamics_torrance",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -5251,7 +5460,9 @@
         "country": "US",
         "id": "xenia_ohio_joe_allen_johnson_arrest",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -5259,8 +5470,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.256371,
-          38.105141
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -5295,8 +5506,8 @@
         "id": "32_fresno_street_vallejo_arthur_leigh_allen_home",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5329,13 +5540,15 @@
         "financial_legal": "Karen told police Allen hated his mother despite her financial support; Bernice bought him cars and boats.",
         "connections": [
           "32 Fresno Street, Vallejo – Arthur Leigh Allen home",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "Just off the escape route from Blue Rock Springs; distance to the crime scene is less than a mile.",
         "geographic": "Vallejo; cul-de-sac off Columbus Parkway, near Blue Rock Springs.",
         "id": "216_aragon_street_vallejo_ron_and_karen_allen_home",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5372,7 +5585,9 @@
         "geographic": "Vallejo; Fresno Street, seven houses from Allen.",
         "id": "45_fresno_street_vallejo_william_white_home",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5380,7 +5595,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2462,
+          -122.245,
           38.095
         ]
       },
@@ -5409,8 +5624,8 @@
         "id": "553_wallace_street_vallejo_robbie_lee_moncure_apartment",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.245,38.095"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5418,7 +5633,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2688,
+          -122.27,
           38.12
         ]
       },
@@ -5446,8 +5661,8 @@
         "id": "1545_broadway_vallejo_allen_s_boat_storage",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.27,38.12"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5455,8 +5670,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.250971,
-          38.105705
+          -122.25,
+          38.105
         ]
       },
       "properties": {
@@ -5484,8 +5699,8 @@
         "id": "the_plunge_801_nebraska_street_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.25,38.105"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5520,7 +5735,9 @@
         "geographic": "Vallejo; Amador Street campus.",
         "id": "vallejo_junior_college_vallejo_senior_high_school",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5528,7 +5745,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2388,
+          -122.24,
           38.1
         ]
       },
@@ -5558,8 +5775,8 @@
         "id": "elmer_cave_elementary_school_770_tregaskis_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.24,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5567,7 +5784,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2412,
+          -122.24,
           38.1
         ]
       },
@@ -5592,8 +5809,8 @@
         "id": "benjamin_franklin_jr_high_school_501_starr_avenue_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.24,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5601,7 +5818,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2588,
+          -122.26,
           38.11
         ]
       },
@@ -5629,8 +5846,8 @@
         "id": "harry_wogan_s_service_station_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.26,38.11"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5638,7 +5855,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2712,
+          -122.27,
           38.12
         ]
       },
@@ -5662,15 +5879,15 @@
         "connections": [
           "Sonoma Auto Parts Store, 248 West Napa Street, Sonoma",
           "Union Oil refinery, Pinole",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "Brown car similar to Ferrin's bronze Corvair — the exact description Mageau gave.",
         "geographic": "Vallejo; 640 Broadway.",
         "id": "arco_station_640_broadway_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.27,38.12"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5678,8 +5895,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.250971,
-          38.104295
+          -122.25,
+          38.105
         ]
       },
       "properties": {
@@ -5709,8 +5926,8 @@
         "id": "ace_hardware_1131_tennessee_street_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.25,38.105"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5718,8 +5935,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1606,
-          38.048961
+          -122.16,
+          38.05
         ]
       },
       "properties": {
@@ -5746,8 +5963,8 @@
         "id": "spectro_chrome_graphics_benicia",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.16,38.05"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -5785,7 +6002,9 @@
         "geographic": "Sonoma; 248 West Napa Street.",
         "id": "sonoma_auto_parts_store_248_west_napa_street_sonoma",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5826,7 +6045,9 @@
         "geographic": "Pinole; Contra Costa County, on San Pablo Bay.",
         "id": "union_oil_refinery_pinole",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5859,7 +6080,9 @@
         "geographic": "Rodeo; Contra Costa County.",
         "id": "union_76_garage_rodeo",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5897,7 +6120,9 @@
         "geographic": "Valley Springs; Calaveras County.",
         "id": "valley_springs_elementary_school",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5931,7 +6156,9 @@
         "geographic": "Sierra foothills; Calaveras / San Andreas area.",
         "id": "mountain_town_school_sierras",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -5939,7 +6166,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.6688,
+          -120.67,
           35.49
         ]
       },
@@ -5966,8 +6193,8 @@
         "id": "santa_rosa_school_atascadero",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-120.67,35.49"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -6001,7 +6228,9 @@
         "geographic": "San Mateo County; Santa Cruz Mountains.",
         "id": "camp_la_honda_ymca_la_honda_gulch",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6039,7 +6268,9 @@
         "geographic": "Solano County; near Fairfield.",
         "id": "travis_air_force_base",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6074,7 +6305,9 @@
         "geographic": "Rohnert Park; Sonoma County.",
         "id": "rohnert_park_sonoma_state_university",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6082,7 +6315,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.6712,
+          -120.67,
           35.49
         ]
       },
@@ -6114,8 +6347,8 @@
         "id": "atascadero_state_hospital_for_the_criminally_insane",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-120.67,35.49"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -6155,7 +6388,9 @@
         "geographic": "Santa Rosa; 2963 Santa Rosa Avenue.",
         "id": "sunset_trailer_park_2963_santa_rosa_avenue_allen_trailer",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6187,7 +6422,9 @@
         "geographic": "Calaveras County.",
         "id": "burson_california_allen_s_1967_p_o_box_address",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6224,7 +6461,9 @@
         "geographic": "Sonoma County coast; near Fort Ross.",
         "id": "salt_point_ranch_fort_ross_sonoma_coast",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6259,7 +6498,9 @@
         "geographic": "San Luis Obispo County.",
         "id": "paso_robles",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6292,7 +6533,9 @@
         "geographic": "Nevada County; Sierra foothills.",
         "id": "grass_valley_california",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -6332,7 +6575,9 @@
         "geographic": "San Francisco; 600 block Waller Street.",
         "id": "600_block_waller_street_san_francisco_radetich_murder_scene",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6364,7 +6609,9 @@
         "geographic": "San Francisco; Haight-Ashbury border.",
         "id": "scott_and_haight_streets_san_francisco_radetich_prior_citation",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6400,7 +6647,9 @@
         "geographic": "San Francisco; Northpoint and Powell, Fisherman's Wharf.",
         "id": "northpoint_theater_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6437,7 +6686,9 @@
         "geographic": "San Francisco; Presidio Heights.",
         "id": "washington_and_locust_streets_san_francisco_paul_hom_robbery",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6474,7 +6725,9 @@
         "geographic": "San Francisco; Presidio Heights.",
         "id": "maple_street_san_francisco_fouke_sighting",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6509,7 +6762,9 @@
         "geographic": "San Francisco; Richmond District.",
         "id": "500_9th_avenue_allen_arms_apartments_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6544,7 +6799,9 @@
         "geographic": "San Francisco; Richmond District.",
         "id": "320_2nd_avenue_san_francisco_arthur_allen_student_apartment",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6581,7 +6838,9 @@
         "geographic": "San Francisco; Presidio.",
         "id": "letterman_general_hospital_presidio",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6616,7 +6875,9 @@
         "geographic": "San Francisco; Potrero Hill.",
         "id": "san_francisco_general_hospital",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6625,7 +6886,7 @@
         "type": "Point",
         "coordinates": [
           -122.286,
-          38.2958
+          38.297
         ]
       },
       "properties": {
@@ -6650,8 +6911,8 @@
         "id": "queen_of_the_valley_hospital_napa",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.286,38.297"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -6687,7 +6948,9 @@
         "geographic": "South Lake Tahoe; El Dorado County.",
         "id": "south_lake_tahoe_police_department",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6722,7 +6985,9 @@
         "geographic": "San Joaquin County.",
         "id": "san_joaquin_county_sheriff_s_office",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6756,7 +7021,9 @@
         "geographic": "Stanislaus County.",
         "id": "patterson_police_department",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6793,7 +7060,9 @@
         "geographic": "Napa; Imola Avenue.",
         "id": "napa_state_hospital",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6829,7 +7098,9 @@
         "geographic": "San Francisco; Parnassus Heights.",
         "id": "langley_porter_neuropsychiatric_institute_ucsf",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6865,7 +7136,9 @@
         "geographic": "San Francisco; Presidio Heights.",
         "id": "1752_fell_street_san_francisco_jarman_murder_site",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -6873,8 +7146,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7106,
-          38.438961
+          -122.71,
+          38.44
         ]
       },
       "properties": {
@@ -6903,8 +7176,8 @@
         "id": "u_save_market_santa_rosa_lori_lee_kursa",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.71,38.44"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -6912,7 +7185,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7188,
+          -122.72,
           38.44
         ]
       },
@@ -6940,8 +7213,8 @@
         "id": "redwood_ice_skating_rink_steele_lane_santa_rosa",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.72,38.44"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -6949,8 +7222,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7206,
-          38.441039
+          -122.72,
+          38.44
         ]
       },
       "properties": {
@@ -6979,8 +7252,8 @@
         "id": "bell_avenue_freeway_entrance_santa_rosa_kim_wendy_allen",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.72,38.44"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7015,7 +7288,9 @@
         "geographic": "Santa Rosa; Bennett Valley.",
         "id": "bennett_valley_road_enterprise_road_santa_rosa_kim_wendy_allen_body",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7052,7 +7327,9 @@
         "geographic": "Cotati; Sonoma County.",
         "id": "cotati_on_ramp_highway_101_jeannette_kamahele",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7060,7 +7337,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.6488,
+          -122.65,
           38.46
         ]
       },
@@ -7088,8 +7365,8 @@
         "id": "los_guilucos_school_for_girls_zodiac_sighting_nov_16_1970",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.65,38.46"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7097,7 +7374,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.6512,
+          -122.65,
           38.46
         ]
       },
@@ -7122,8 +7399,8 @@
         "id": "pythian_way_and_sonoma_highway",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.65,38.46"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7156,7 +7433,9 @@
         "geographic": "Sonoma County; northwest of Santa Rosa.",
         "id": "mark_west_springs_road",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7194,7 +7473,9 @@
         "geographic": "San Francisco; Telegraph Hill.",
         "id": "melvin_belli_residence_telegraph_hill_penthouse",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7232,7 +7513,9 @@
         "geographic": "San Francisco; Montgomery Street financial district.",
         "id": "melvin_belli_office_montgomery_street",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7272,7 +7555,9 @@
         "geographic": "Manhattan Beach; LA County South Bay.",
         "id": "manhattan_beach_police_department",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7311,7 +7596,9 @@
         "geographic": "San Francisco; Lake Merced area.",
         "id": "san_francisco_state_university_1993_zodiac_conference",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7319,8 +7606,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.256971,
-          38.104705
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -7351,8 +7638,8 @@
         "id": "vallejo_police_department_headquarters_1991_re_opening",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7390,7 +7677,9 @@
         "geographic": "San Jose; Santa Clara County.",
         "id": "santa_clara_county_jail_ralph_spinelli",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7398,8 +7687,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7206,
-          38.438961
+          -122.72,
+          38.44
         ]
       },
       "properties": {
@@ -7427,8 +7716,8 @@
         "id": "sonoma_county_jail_allen",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.72,38.44"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7465,7 +7754,9 @@
         "geographic": "Manhattan; Central Park.",
         "id": "central_park_new_york_zodiac_ii_shooting",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7501,7 +7792,9 @@
         "geographic": "Queens; Woodhaven.",
         "id": "woodhaven_87th_road_queens_zodiac_ii_first_shooting",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7539,7 +7832,9 @@
         "geographic": "Brooklyn; East New York.",
         "id": "east_new_york_pitkin_avenue_brooklyn_zodiac_ii_residence",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -7576,7 +7871,9 @@
         "geographic": "Kobe; Hyogo Prefecture, Japan.",
         "id": "tomogaoka_junior_high_school_kobe_japan_zodiac_iii_head_scene",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -7609,7 +7906,9 @@
         "geographic": "Kansai region, Japan.",
         "id": "kobe_japan",
         "certainty": "confirmed",
-        "location_type": "city_centroid"
+        "location_type": "city_centroid",
+        "coordinate_precision": "city_reference",
+        "coordinate_note": "City-level reference point only; not an address or a specific incident location."
       }
     },
     {
@@ -7617,7 +7916,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.0388,
+          -122.04,
           38.25
         ]
       },
@@ -7641,15 +7940,15 @@
         "connections": [
           "Vallejo P.O. box – Paul Doerr",
           "Lake Herman Road – Gate #10 (Jensen-Faraday murders)",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "Doerr was 42 in 1969, 5'9\" — consistent with witness estimates; fanzine ciphers and 1¢-stamp advocacy mirror Zodiac's habits.",
         "geographic": "Solano County; Fairfield.",
         "id": "225_east_utah_street_fairfield_paul_doerr_residence",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.04,38.25"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7657,7 +7956,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2572,
+          -122.256,
           38.104
         ]
       },
@@ -7684,8 +7983,8 @@
         "id": "vallejo_p_o_box_paul_doerr",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7723,7 +8022,9 @@
         "geographic": "San Francisco; Bush Street, near Fillmore.",
         "id": "2377_bush_street_san_francisco_good_times_newspaper_office_gaikowski",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -7758,7 +8059,9 @@
         "geographic": "San Francisco; Fell Street, Panhandle.",
         "id": "1842_fell_street_vicinity_good_times_switchboard",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -7797,7 +8100,9 @@
         "geographic": "Tuolumne County; Sierra foothills.",
         "id": "groveland_california_gary_francis_poste_residence",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -7831,7 +8136,9 @@
         "geographic": "Tuolumne County.",
         "id": "merrell_road_groveland_poste_arrest_site",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -7839,7 +8146,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.3738,
+          -117.375,
           33.975
         ]
       },
@@ -7870,8 +8177,8 @@
         "id": "riverside_apartment_rick_marshall",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-117.375,33.975"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -7908,7 +8215,9 @@
         "geographic": "San Francisco; Scott Street, near the Panhandle.",
         "id": "143_scott_street_san_francisco_marshall_basement_apartment",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -7916,7 +8225,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.3988,
+          -122.4,
           37.73
         ]
       },
@@ -7986,8 +8295,8 @@
         "id": "avenue_theatre_2650_san_bruno_avenue_san_francisco",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.4,37.73"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8019,13 +8328,15 @@
         "connections": [
           "Vallejo Police Department",
           "Lake Herman Road – Gate #10 (Jensen-Faraday murders)",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "Like Allen, a Fairfield/Vallejo-area man with a car and firearms; the 'road games' echo Zodiac's highway stalking.",
         "geographic": "Solano County; Fairfield.",
         "id": "fairfield_california_william_joseph_grant_residence",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8061,7 +8372,9 @@
         "geographic": "Ventura County; Santa Susana Mountains.",
         "id": "spahn_ranch_simi_valley_manson_family_base_bruce_davis",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8117,7 +8430,9 @@
         "financial_legal": "No forensic evidence ties Manson or any Family member to the Zodiac murders.",
         "id": "636_cole_street_san_francisco_manson_family_residence_1967",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8155,7 +8470,9 @@
         "geographic": "Sacramento.",
         "id": "sherwood_morrill_residence_wallace_penny_visit",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -8163,7 +8480,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4012,
+          -122.4,
           37.73
         ]
       },
@@ -8190,8 +8507,8 @@
         "id": "copper_penny_restaurant_san_francisco",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.4,37.73"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8222,13 +8539,15 @@
         "financial_legal": "Had been fired from a sheriff's department; owned crime-scene photos he admitted taking as 'souvenirs.'",
         "connections": [
           "Vallejo Police Department",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "A police-groupie suspect with access to evidence — the same profile as the Zodiac-as-cop theories.",
         "geographic": "San Francisco Bay Area.",
         "id": "jack_apartment_1979_hell_s_angels_adjacent_roommate",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8268,7 +8587,9 @@
         "geographic": "Santa Rosa; Sonoma County.",
         "id": "dr_thomas_rykoff_office_santa_rosa",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -8301,7 +8622,9 @@
         "geographic": "San Francisco; Noe Valley.",
         "id": "day_street_noe_valley_don_cheney_residence_1965_66",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -8338,7 +8661,9 @@
         "geographic": "Contra Costa County; Concord.",
         "id": "halifax_way_concord_don_cheney_residence_1966_jan_1969",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -8346,8 +8671,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.7506,
-          34.061039
+          -117.75,
+          34.06
         ]
       },
       "properties": {
@@ -8375,8 +8700,8 @@
         "id": "la_vitta_avenue_pomona_don_cheney_residence_1969_71",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-117.75,34.06"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8384,8 +8709,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.7506,
-          34.058961
+          -117.75,
+          34.06
         ]
       },
       "properties": {
@@ -8414,8 +8739,8 @@
         "id": "pomona_police_station_cheney_s_first_report",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-117.75,34.06"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8451,7 +8776,9 @@
         "geographic": "Vallejo area; exact address not published, point approximate.",
         "id": "jack_tarrance_alternate_zodiac_suspect_d_2006",
         "certainty": "contested",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8459,8 +8786,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.256971,
-          38.103295
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -8483,15 +8810,15 @@
         "financial_legal": "Had been fired from a sheriff's department; admitted keeping official Ferrin crime-scene photos as souvenirs.",
         "connections": [
           "Vallejo Police Department",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "A police-adjacent suspect with access to evidence — the same profile as the 'Zodiac was a cop' theories.",
         "geographic": "Vallejo; exact address not published, point is approximate.",
         "id": "jack_former_vallejo_area_lawman_suspect_1979",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8527,7 +8854,7 @@
           "Lake Herman Road – Gate #10 (Jensen-Faraday murders)",
           "Pastime Bar, Benicia",
           "Vallejo Hell's Angels residence / clubhouse",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "The bar-and-clubhouse milieu that produced both suspects and informants — parallel to the Terry's Restaurant / Caesar's Palace social circuit.",
         "geographic": "Vallejo; approximate, based on reported chapter presence in the late 1960s.",
@@ -8556,7 +8883,9 @@
         ],
         "id": "vallejo_hell_s_angels_residence_clubhouse",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8595,7 +8924,9 @@
         "geographic": "Benicia; First Street, downtown.",
         "id": "pastime_bar_726_first_street_benicia",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8603,8 +8934,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.250971,
-          38.100705
+          -122.25,
+          38.1
         ]
       },
       "properties": {
@@ -8635,8 +8966,8 @@
         "id": "jack_s_hangout_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.25,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8690,7 +9021,9 @@
         ],
         "id": "iron_cross_mc_american_nazi_party_contact_point_north_bay",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -8698,7 +9031,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2548,
+          -122.256,
           38.106
         ]
       },
@@ -8733,8 +9066,8 @@
         "id": "vallejo_city_hall_734_marin_street_1969_police_fire_strike",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.106"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8771,7 +9104,9 @@
         "geographic": "Vallejo; downtown, same block as City Hall.",
         "id": "casa_de_vallejo_hotel_union_strike_headquarters",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -8779,7 +9114,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2548,
+          -122.256,
           38.103
         ]
       },
@@ -8807,8 +9142,8 @@
         "id": "ascension_episcopal_church_georgia_street_1969_fire",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.103"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8816,8 +9151,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.256371,
-          38.102859
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -8846,8 +9181,8 @@
         "id": "vallejo_police_department_1969_understaffing_context",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -8878,7 +9213,9 @@
         "geographic": "Vallejo; approximate.",
         "id": "blue_power_vallejo_police_militancy_context",
         "certainty": "confirmed",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -8911,7 +9248,7 @@
         "connections": [
           "Terry's Restaurant, Magazine Street, Vallejo",
           "Mr. Ed's Restaurant, Vallejo",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)"
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)"
         ],
         "similarities": "A nightclub at the edge of town near highway junctions — the same water-and-road geography as the canonical scenes.",
         "geographic": "Vallejo; north side, near Highways 37 and 29.",
@@ -8931,7 +9268,9 @@
         ],
         "id": "coronado_inn_1506_sears_point_road_vallejo",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -8963,14 +9302,16 @@
         "connections": [
           "Coronado Inn, 1506 Sears Point Road, Vallejo",
           "Terry's Restaurant, Magazine Street, Vallejo",
-          "Blue Rock Springs Golf Course parking lot (Ferrin-Mageau attack)",
+          "Blue Rock Springs Park parking lot (Ferrin-Mageau attack)",
           "Lake Herman Road – Gate #10 (Jensen-Faraday murders)"
         ],
         "similarities": "A drive-in on the route to a lovers' lane — the same pattern at both Lake Herman Road and Blue Rock Springs.",
         "geographic": "Vallejo; near the Coronado Inn.",
         "id": "mr_ed_s_restaurant_vallejo",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9006,7 +9347,9 @@
         "geographic": "San Francisco; Tenderloin, 895 O'Farrell Street.",
         "id": "mitchell_brothers_o_farrell_theatre_895_o_farrell_street_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9043,7 +9386,9 @@
         "geographic": "San Francisco; Market/Geary theater district, approximate.",
         "id": "adult_theater_district_market_geary_san_francisco_contested_snuff_film_theory",
         "certainty": "contested",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -9082,7 +9427,9 @@
         "country": "US",
         "id": "zodiac_rapist_production_los_angeles_contested",
         "certainty": "contested",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -9120,7 +9467,9 @@
         "geographic": "San Francisco; approximate, exact address not published.",
         "id": "bob_vaughn_residence_alleged_film_canister_cache",
         "certainty": "contested",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -9156,7 +9505,9 @@
         "country": "US",
         "id": "state_lake_theatre_chicago_wurlitzer_origin",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9164,7 +9515,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2572,
+          -122.256,
           38.106
         ]
       },
@@ -9191,8 +9542,8 @@
         "id": "vallejo_naval_and_historical_museum_former_city_hall",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.106"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9229,7 +9580,9 @@
         "geographic": "Vallejo; downtown.",
         "id": "vallejo_times_herald_office",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9237,8 +9590,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.249629,
-          38.103859
+          -122.25,
+          38.105
         ]
       },
       "properties": {
@@ -9266,8 +9619,8 @@
         "id": "solano_county_sheriff_s_office_strike_support_role",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.25,38.105"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9275,7 +9628,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2612,
+          -122.26,
           38.11
         ]
       },
@@ -9304,8 +9657,8 @@
         "id": "california_highway_patrol_strike_reinforcement_staging",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.26,38.11"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9313,7 +9666,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2572,
+          -122.256,
           38.103
         ]
       },
@@ -9338,8 +9691,8 @@
         "id": "ascension_episcopal_church_present_day_location",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.103"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9347,8 +9700,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.0406,
-          38.251039
+          -122.04,
+          38.25
         ]
       },
       "properties": {
@@ -9377,8 +9730,8 @@
         "id": "minutemen_mailing_list_connection_paul_doerr",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.04,38.25"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9414,7 +9767,9 @@
         "geographic": "Los Angeles; approximate.",
         "id": "minutemen_troy_houghton_former_leader",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -9443,7 +9798,9 @@
         "geographic": "Vallejo; symbolic, point approximate.",
         "id": "minutemen_gunsight_logo_symbol_origin",
         "certainty": "confirmed",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -9479,7 +9836,9 @@
         "geographic": "Palo Alto; University Avenue, downtown.",
         "id": "stanford_theatre_221_university_avenue_palo_alto",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -9516,7 +9875,9 @@
         "country": "US",
         "id": "warner_grand_theatre_san_pedro_zodiac_film_set",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9567,7 +9928,9 @@
         "geographic": "North Coast to San Francisco; approximate corridor.",
         "id": "hell_s_angels_meth_route_mendocino_napa_vallejo_san_francisco",
         "certainty": "contested",
-        "location_type": "corridor"
+        "location_type": "corridor",
+        "coordinate_precision": "approximate_corridor",
+        "coordinate_note": "Schematic corridor connecting broad regions; not a surveyed or navigable route."
       }
     },
     {
@@ -9605,7 +9968,9 @@
         "geographic": "San Francisco; Richmond District, 6114 California Street.",
         "id": "church_of_satan_6114_california_street_san_francisco",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9613,8 +9978,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.255629,
-          38.102859
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -9644,8 +10009,8 @@
         "id": "solano_gun_shop_vallejo",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9680,7 +10045,9 @@
         "geographic": "Vallejo; Georgia Street, downtown.",
         "id": "triple_a_s_sporting_goods_1405_georgia_street_vallejo",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9688,7 +10055,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.9892,
+          -121.988,
           38.357
         ]
       },
@@ -9715,8 +10082,8 @@
         "id": "ammunition_supply_point_solano_27_commerce_place_vacaville",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-121.988,38.357"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9746,7 +10113,9 @@
         "geographic": "Vallejo; symbolic, point approximate.",
         "id": "mail_order_firearms_pre_1968_ban_context",
         "certainty": "contextual",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -9754,8 +10123,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.250971,
-          38.099295
+          -122.25,
+          38.1
         ]
       },
       "properties": {
@@ -9786,8 +10155,8 @@
         "id": "mare_island_naval_shipyard_zodiac_naval_connection_hub",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.25,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9823,7 +10192,9 @@
         "geographic": "Corona; Riverside County.",
         "id": "corona_naval_ordnance_laboratory",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9831,8 +10202,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4196,
-          37.773961
+          -122.419,
+          37.775
         ]
       },
       "properties": {
@@ -9861,8 +10232,8 @@
         "id": "san_francisco_mensa_the_ecphorizer_newsletter",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.419,37.775"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -9900,7 +10271,9 @@
         "country": "US",
         "id": "uc_berkeley_michael_o_hare_accused_not_implicated",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -9933,7 +10306,9 @@
         "country": "US",
         "id": "virgin_islands_darlene_ferrin_honeymoon_and_alleged_murder_witness",
         "certainty": "contested",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -9967,7 +10342,9 @@
         "country": "MX",
         "id": "mexico_packages_to_darlene_ferrin",
         "certainty": "confirmed",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -9975,8 +10352,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.249629,
-          38.098859
+          -122.25,
+          38.1
         ]
       },
       "properties": {
@@ -10006,8 +10383,8 @@
         "id": "international_house_of_pancakes_tennessee_street_vallejo",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.25,38.1"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -10044,7 +10421,9 @@
         "geographic": "Reno; Washoe County, Nevada.",
         "id": "darlene_ferrin_s_reno_residency_divorce_period",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -10074,7 +10453,9 @@
         "geographic": "Southern California / Marin County; approximate, the fair moved between sites.",
         "id": "renaissance_pleasure_faire_paul_doerr_costuming_interest",
         "certainty": "confirmed",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -10105,7 +10486,9 @@
         "geographic": "San Francisco; symbolic.",
         "id": "tolkien_script_halloween_card_htaed_anagram",
         "certainty": "contextual",
-        "location_type": "symbolic"
+        "location_type": "symbolic",
+        "coordinate_precision": "no_geometry",
+        "coordinate_note": "Intentionally has no point geometry because this entry is symbolic, contextual, or too geographically broad to place responsibly."
       }
     },
     {
@@ -10113,7 +10496,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.3762,
+          -117.375,
           33.975
         ]
       },
@@ -10144,8 +10527,8 @@
         "id": "melvin_belli_engineered_encounter_with_riverside_law_student",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-117.375,33.975"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -10153,7 +10536,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4012,
+          -122.4,
           37.78
         ]
       },
@@ -10184,8 +10567,8 @@
         "id": "melvin_belli_a_m_san_francisco_appearance_context",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.4,37.78"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -10222,7 +10605,9 @@
         "geographic": "Stanford; Santa Clara County.",
         "id": "stanford_university_gaikowski_marshall_connection",
         "certainty": "confirmed",
-        "location_type": "approximate"
+        "location_type": "approximate",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
       }
     },
     {
@@ -10259,7 +10644,9 @@
         "geographic": "Stanford; Memorial Church.",
         "id": "stanford_memorial_church_arlis_perry_murder",
         "certainty": "confirmed",
-        "location_type": "exact_site"
+        "location_type": "exact_site",
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance."
       }
     },
     {
@@ -10267,8 +10654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.255029,
-          38.103295
+          -122.256,
+          38.104
         ]
       },
       "properties": {
@@ -10296,8 +10683,8 @@
         "id": "jfk_public_library_vallejo_william_joseph_grant_identity",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "jittered": true,
-        "jitter_group": "-122.256,38.104"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
       }
     },
     {
@@ -10305,8 +10692,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.0406,
-          38.248961
+          -122.04,
+          38.25
         ]
       },
       "properties": {
@@ -10333,8 +10720,8 @@
         "id": "solano_county_gun_club_shooting_range_context",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "jittered": true,
-        "jitter_group": "-122.04,38.25"
+        "coordinate_precision": "approximate",
+        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
       }
     }
   ]

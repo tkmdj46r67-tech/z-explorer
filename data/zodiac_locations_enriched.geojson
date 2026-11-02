@@ -907,8 +907,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.25,
-          38.105
+          -122.2412735,
+          38.1021276
         ]
       },
       "properties": {
@@ -946,8 +946,13 @@
         "id": "1300_virginia_street_vallejo_ferrin_new_home",
         "certainty": "confirmed",
         "location_type": "exact_site",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Source-dataset location retained as the best available site-level approximation; not independently verified to a precise historical parcel or entrance. The point was restored to the unjittered anchor recorded in the source file."
+        "coordinate_precision": "address_level",
+        "coordinate_note": "Address-specific map coordinate; exact historic building footprint not independently surveyed.",
+        "address": "1300 Virginia Street, Vallejo, CA 94590",
+        "coordinate_sources": [
+          "https://www.redfin.com/CA/Vallejo/1300-Virginia-St-94590/home/2241457"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -5470,8 +5475,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.256,
-          38.104
+          -122.240048,
+          38.110659
         ]
       },
       "properties": {
@@ -5506,8 +5511,13 @@
         "id": "32_fresno_street_vallejo_arthur_leigh_allen_home",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
+        "coordinate_precision": "address_level",
+        "coordinate_note": "Address-specific coordinate published for the historic residence; private property, not a visitor site.",
+        "address": "32 Fresno Street, Vallejo, CA 94590",
+        "coordinate_sources": [
+          "https://oddstops.com/arthur-leigh-allen-parents"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -5515,8 +5525,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.22,
-          38.1
+          -122.2025927,
+          38.0963483
         ]
       },
       "properties": {
@@ -5547,8 +5557,13 @@
         "id": "216_aragon_street_vallejo_ron_and_karen_allen_home",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
+        "coordinate_precision": "address_level",
+        "coordinate_note": "Address-specific map coordinate; exact historic building footprint not independently surveyed.",
+        "address": "216 Aragon Street, Vallejo, CA 94591",
+        "coordinate_sources": [
+          "https://www.redfin.com/CA/Vallejo/216-Aragon-St-94591/home/2306102"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -5556,8 +5571,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.258,
-          38.104
+          -122.2405698,
+          38.1109908
         ]
       },
       "properties": {
@@ -5586,8 +5601,13 @@
         "id": "45_fresno_street_vallejo_william_white_home",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
+        "coordinate_precision": "address_level",
+        "coordinate_note": "Address-specific map coordinate; exact historic building footprint not independently surveyed.",
+        "address": "45 Fresno Street, Vallejo, CA 94590",
+        "coordinate_sources": [
+          "https://www.redfin.com/CA/Vallejo/45-Fresno-St-94590/home/2237516"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -5895,8 +5915,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.25,
-          38.105
+          -122.2438147,
+          38.1095598
         ]
       },
       "properties": {
@@ -5926,8 +5946,13 @@
         "id": "ace_hardware_1131_tennessee_street_vallejo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed. The point was restored to the unjittered anchor recorded in the source file."
+        "coordinate_precision": "address_level",
+        "coordinate_note": "Address/parcel coordinate for 1131 Tennessee Street; historical store footprint not separately confirmed.",
+        "address": "1131 Tennessee Street, Vallejo, CA 94590",
+        "coordinate_sources": [
+          "https://www.mlslistings.com/Property/BA326061397/1131-tennessee-st-vallejo-ca-94590?view=md"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -6012,15 +6037,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.3,
-          38.0
+          -122.2590278,
+          38.0475833
         ]
       },
       "properties": {
-        "name": "Union Oil refinery, Pinole",
+        "name": "Union Oil refinery (Rodeo/Oleum; later Phillips 66 Rodeo)",
         "category": "suspect",
-        "description": "Where Allen worked as a junior chemist (Sept 8, 1970 – May 5, 1972); Toschi, Armstrong, and Mulanax interviewed him here Aug 4, 1971.",
-        "summary": "Site of the single most productive police interview in the case — Toschi and Armstrong first saw the Zodiac wristwatch here and heard Allen volunteer the bloody-knife and Riverside facts.",
+        "description": "Former Union Oil refinery at the Rodeo/Oleum site (now the Phillips 66 Rodeo Renewable Energy Complex), where Arthur Leigh Allen reportedly worked as a junior chemist from September 8, 1970 to May 5, 1972. Toschi, Armstrong, and Mulanax interviewed him at the refinery on August 4, 1971. The marker identifies the refinery facility/access area, not the precise interview room.",
+        "summary": "Workplace of Arthur Leigh Allen and site of the August 4, 1971 police interview. Historical sources commonly call the facility the Union Oil refinery in Pinole, although the refinery itself is the Rodeo/Oleum facility.",
         "context_label": "Suspect workplace / key interview",
         "principal_people": [
           "Arthur Leigh Allen",
@@ -6042,12 +6067,21 @@
           "Rohnert Park – Sonoma State University"
         ],
         "similarities": "Workplace interview — same tactic used later at Ace Hardware and (via Bawart) at the Vallejo home.",
-        "geographic": "Pinole; Contra Costa County, on San Pablo Bay.",
+        "geographic": "Rodeo/Oleum, Contra Costa County, California, near San Pablo Bay (historically often described in Zodiac accounts as Pinole).",
         "id": "union_oil_refinery_pinole",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
+        "coordinate_precision": "facility_site_approximate",
+        "coordinate_note": "The original point was a coarse, misplaced coordinate near Pinole. The historical Union Oil refinery was the Rodeo/Oleum refinery, at the present Phillips 66 Rodeo facility. The 90 San Pablo Avenue address in Crockett is a NuStar fuel-storage terminal, not the refinery. This point is placed at the refinery access area near San Pablo Avenue and Refinery Road; the precise personnel-office/interview-room location is not independently established.",
+        "address": "1380 San Pablo Avenue, Rodeo, CA 94572",
+        "coordinate_sources": [
+          "https://www.energy.ca.gov/data-reports/energy-almanac/californias-petroleum-market/californias-oil-refineries/california-oil",
+          "https://www.waterboards.ca.gov/rwqcb2/board_info/agendas/2024/June/Phillips66/Tentative_Order.pdf",
+          "https://www.contracosta.ca.gov/DocumentCenter/View/1116",
+          "https://www.sfgate.com/business/article/Contra-Costa-fire-What-we-know-about-the-NuStar-14537068.php",
+          "https://www.zodiackillerfacts.com/allen.htm"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -6055,14 +6089,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.27,
-          38.03
+          -122.266585,
+          38.032708
         ]
       },
       "properties": {
-        "name": "Union 76 garage, Rodeo",
+        "name": "Union 76 garage (401 Parker Avenue, Rodeo)",
         "category": "suspect",
-        "description": "Where Allen applied for a garage job April 20, 1970, while still working at the Pinole refinery — a clue to his restlessness before the Button Letter.",
+        "description": "Union 76 service station at 401 Parker Avenue, Rodeo. Allen reportedly applied for a garage job here on April 20, 1970, while still working at the Union Oil refinery.",
         "summary": "Small additional workplace lead; not developed by police.",
         "context_label": "Suspect job application",
         "principal_people": [
@@ -6081,8 +6115,14 @@
         "id": "union_76_garage_rodeo",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
+        "coordinate_precision": "address_level",
+        "coordinate_note": "Historical Union 76 service station address confirmed by a 1980 Federal Register listing; coordinate is an address-level geocode.",
+        "address": "401 Parker Avenue, Rodeo, CA 94572",
+        "coordinate_sources": [
+          "https://www.govinfo.gov/content/pkg/FR-1980-02-01/pdf/FR-1980-02-01.pdf",
+          "https://www.whereorg.com/rodeo-1917128"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
@@ -6356,8 +6396,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.71,
-          38.42
+          -122.71361739,
+          38.40528948
         ]
       },
       "properties": {
@@ -6389,8 +6429,14 @@
         "id": "sunset_trailer_park_2963_santa_rosa_avenue_allen_trailer",
         "certainty": "confirmed",
         "location_type": "approximate",
-        "coordinate_precision": "approximate",
-        "coordinate_note": "Best available geographic approximation from the source dataset; exact address or point is not established, and the location may be disputed."
+        "coordinate_precision": "site_level_approximate",
+        "coordinate_note": "Corrected from a city-level point to the trailer-park parcel. The exact former space A-7 position within the park is not established by the sources used.",
+        "address": "2963 Santa Rosa Avenue, Santa Rosa, CA 95407 (Sunset Trailer Park; historic space A-7)",
+        "coordinate_sources": [
+          "https://www.mhbo.com/mobile-home-park/88438-sunset-park-community-2963-santa-rosa-avenue-santa-rosa-ca-95407",
+          "https://www.zodiackiller.com/FBIZodiac1.pdf"
+        ],
+        "coordinate_verified_on": "2026-11-01"
       }
     },
     {
